@@ -5,7 +5,7 @@
 **Student:** Lee Yin Shen  
 **Field:** Data Engineering  
 **GitHub:** [leeyinshen0818](https://github.com/leeyinshen0818)  
-**LinkedIn:** To be updated
+**LinkedIn:** [To be updated](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
 
 ## About Me
 
@@ -38,12 +38,12 @@ It contains:
 
 ## SECP3843 Coursework
 
-| Activity | Description | Evidence |
-|---|---|---|
-| Academic Writing | Academic writing assignment | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Assign 1 Academic Writting/README.md>) |
-| Apache Spark Tutorial | Spark concepts and management case study | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Apache/README.md>) |
-| Article Tutorial | Article review and tutorial submission | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Article/README.md>) |
-| Azure Tutorial | Bronze, silver, and gold data processing with Power BI evidence | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Azure/README.md>) |
+| Activity              | Description                                                     | Evidence                                                                                                            |
+| --------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Academic Writing      | Academic writing assignment                                     | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Assign 1 Academic Writting/README.md>) |
+| Apache Spark Tutorial | Spark concepts and management case study                        | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Apache/README.md>)            |
+| Article Tutorial      | Article review and tutorial submission                          | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Article/README.md>)           |
+| Azure Tutorial        | Bronze, silver, and gold data processing with Power BI evidence | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Azure/README.md>)             |
 
 ## Featured Projects
 
@@ -100,14 +100,14 @@ A C++ project that applies a FIFO queue to a convocation ceremony simulation.
 
 The repository is organised by year, semester, and subject. Each meaningful assignment, tutorial, lab, or project folder contains its own README with evidence links and reflection.
 
-| Study period | Main subjects | Folder |
-|---|---|---|
-| Year 1, Semester 1 | Digital Logic, Programming Technique I, Technology & Information System | [Open folder](<documents/year-1/semester-1>) |
-| Year 1, Semester 2 | Computer Architecture, HCI, Programming Technique II, System Analysis and Design | [Open folder](<documents/year-1/semester-2>) |
-| Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development | [Open folder](<documents/year-2/semester-1>) |
-| Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System | [Open folder](<documents/year-2/semester-2>) |
-| Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems | [Open folder](<documents/year-3/semester-1>) |
-| Year 3, Semester 2 | Special Topic in Data Engineering | [Open folder](<documents/year-3/semester-2/Special Topic in Data Engineering>) |
+| Study period       | Main subjects                                                                    | Folder                                                                         |
+| ------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Year 1, Semester 1 | Digital Logic, Programming Technique I, Technology & Information System          | [Open folder](documents/year-1/semester-1)                                     |
+| Year 1, Semester 2 | Computer Architecture, HCI, Programming Technique II, System Analysis and Design | [Open folder](documents/year-1/semester-2)                                     |
+| Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development  | [Open folder](documents/year-2/semester-1)                                     |
+| Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System       | [Open folder](documents/year-2/semester-2)                                     |
+| Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems                | [Open folder](documents/year-3/semester-1)                                     |
+| Year 3, Semester 2 | Special Topic in Data Engineering                                                | [Open folder](<documents/year-3/semester-2/Special Topic in Data Engineering>) |
 
 ## Skills and Technologies
 
