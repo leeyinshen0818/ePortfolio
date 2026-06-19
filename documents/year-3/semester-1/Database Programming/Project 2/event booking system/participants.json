@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "695acc20f084f228b404f05b"
+  },
+  "firstName": "Lok Yee",
+  "lastName": "Poh",
+  "email": "polok@gmail.com",
+  "phone": "011-10026148",
+  "gender": "Female",
+  "age": 22,
+  "address": "Kuala Lumpur",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f029"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f05c"
+  },
+  "firstName": "Yee Wen",
+  "lastName": "Lau",
+  "email": "lyw@gmail.com",
+  "phone": "012-3456789",
+  "gender": "Female",
+  "age": 25,
+  "address": "Kuala Lumpur",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02a"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f05d"
+  },
+  "firstName": "Yin Shen",
+  "lastName": "Lee",
+  "email": "lys@gmail.com",
+  "phone": "012-1249548",
+  "gender": "Male",
+  "age": 24,
+  "address": "Johor",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02b"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f05e"
+  },
+  "firstName": "Heng",
+  "lastName": "Sabrina",
+  "email": "sab@gmail.com",
+  "phone": "014-5872613",
+  "gender": "Female",
+  "age": 19,
+  "address": "Melaka",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02c"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f05f"
+  },
+  "firstName": "Cheong",
+  "lastName": "Cheryl",
+  "email": "cheryl@gmail.com",
+  "phone": "013-6854210",
+  "gender": "Female",
+  "age": 35,
+  "address": "Johor",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02d"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f060"
+  },
+  "firstName": "Cheng Shuan",
+  "lastName": "Woo",
+  "email": "woo@gmail.com",
+  "phone": "012-6485132",
+  "gender": "Female",
+  "age": 30,
+  "address": "Kuala Lumpur",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f029"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f061"
+  },
+  "firstName": "Ying Jia",
+  "lastName": "Chau",
+  "email": "chau@gmail.com",
+  "phone": "011-85642356",
+  "gender": "Female",
+  "age": 23,
+  "address": "Perak",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02a"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f062"
+  },
+  "firstName": "Ng",
+  "lastName": "Rick",
+  "email": "rick@gmail.com",
+  "phone": "019-6581481",
+  "gender": "Male",
+  "age": 28,
+  "address": "Johor",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02b"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f063"
+  },
+  "firstName": "Neo",
+  "lastName": "Jason",
+  "email": "neo@gmail.com",
+  "phone": "016-3456789",
+  "gender": "Male",
+  "age": 26,
+  "address": "Kuala Lumpur",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02c"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f064"
+  },
+  "firstName": "Kah Sin",
+  "lastName": "Gui",
+  "email": "gui@gmail.com",
+  "phone": "018-3741789",
+  "gender": "Female",
+  "age": 20,
+  "address": "Johor",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02d"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f065"
+  },
+  "firstName": "Tan",
+  "lastName": "Reynard",
+  "email": "tan@gmail.com",
+  "phone": "019-3456823",
+  "gender": "Male",
+  "age": 19,
+  "address": "Negeri Sembilan",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f029"
+  }
+},
+{
+  "_id": {
+    "$oid": "695acc20f084f228b404f066"
+  },
+  "firstName": "Chia",
+  "lastName": "Brendan",
+  "email": "bren@gmail.com",
+  "phone": "017-3456823",
+  "gender": "Male",
+  "age": 29,
+  "address": "Melaka",
+  "bookedEventIds": {
+    "$oid": "695abc9cf084f228b404f02b"
+  }
+}]

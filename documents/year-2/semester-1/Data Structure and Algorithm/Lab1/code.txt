@@ -1,0 +1,78 @@
+#ifndef SIMPLECALC_H
+#define SIMPLECALC_H
+
+class SimpleCalc {
+private:
+    double num1;
+    double num2;
+
+public:
+    // Constructor
+    SimpleCalc(double a, double b);
+
+    // Methods to perform calculations
+    double add();
+    double subtract();
+    double multiply();
+    double divide();
+};
+
+#endif
+
+
+#include "SimpleCalc.h"
+#include <stdexcept>
+
+// Constructor implementation
+SimpleCalc::SimpleCalc(double a, double b) : num1(a), num2(b) {}
+
+// Method to add numbers
+double SimpleCalc::add() {
+    return num1 + num2;
+}
+
+// Method to subtract numbers
+double SimpleCalc::subtract() {
+    return num1 - num2;
+}
+
+// Method to multiply numbers
+double SimpleCalc::multiply() {
+    return num1 * num2;
+}
+
+// Method to divide numbers
+double SimpleCalc::divide() {
+    if (num2 == 0) {
+        throw std::runtime_error("Error: Division by zero!");
+    }
+    return num1 / num2;
+}
+
+
+
+
+#include <iostream>
+#include "SimpleCalc.h"
+
+int main() {
+    double num1, num2;
+    std::cout << "Enter two numbers: ";
+    std::cin >> num1 >> num2;
+
+    // Create a SimpleCalc object
+    SimpleCalc calculator(num1, num2);
+
+    // Perform calculations and display results
+    std::cout << "The result of addition is: " << calculator.add() << std::endl;
+    std::cout << "The result of subtraction is: " << calculator.subtract() << std::endl;
+    std::cout << "The result of multiplication is: " << calculator.multiply() << std::endl;
+
+    try {
+        std::cout << "The result of division is: " << calculator.divide() << std::endl;
+    } catch (const std::runtime_error& e) {
+        std::cerr << e.what() << std::endl;
+    }
+
+    return 0;
+}

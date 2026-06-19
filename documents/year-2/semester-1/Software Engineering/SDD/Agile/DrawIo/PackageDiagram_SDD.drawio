@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.8">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1036" dy="1067" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-1" value="Membership Application System" style="shape=folder;fontStyle=1;tabWidth=210;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="25" width="730" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-2" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-1">
+          <mxGeometry width="730" height="385.3559322033898" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-3" value="View Layer" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-1">
+          <mxGeometry x="33.69" y="47.46" width="226.31" height="262.54" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-4" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-3">
+          <mxGeometry width="226.30999999999997" height="183.77799999999996" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-5" value="ProfilePage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-3">
+          <mxGeometry x="20.41603892702561" y="50.00761904761904" width="86.21333333333332" height="40.393654285714284" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-6" value="MembershipFormPage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-3">
+          <mxGeometry x="20.42" y="100.49447777777777" width="159.58" height="40.39226518518519" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-7" value="EditProfilePage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-3">
+          <mxGeometry x="20.41603892702561" y="150.02285714285716" width="150.87333333333336" height="40.393654285714284" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-8" value="AdminApprovalPage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-3">
+          <mxGeometry x="20.41603892702561" y="200.03047619047615" width="150.87333333333336" height="40.393654285714284" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-9" value="Domain Layer" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-1">
+          <mxGeometry x="310" y="47.46" width="390" height="262.54" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-10" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry width="390" height="183.77799999999996" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-11" value="MembershipHandle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry x="20" y="55.87240148148149" width="124.82" height="40.39615466666666" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-12" value="ProfileUpdate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry x="20" y="116.68444444444445" width="110" height="40.39226518518519" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-13" value="UserProfile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry x="20" y="175.02374955555558" width="110" height="40.39615466666666" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-14" value="AdminApprovalHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry x="180" y="87.51333333333334" width="164.82" height="40.39615466666666" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-15" value="MemberhsipApplication" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-9">
+          <mxGeometry x="180" y="145.85555555555555" width="160" height="40.39615466666666" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-16" value="Data Access Layer" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-1">
+          <mxGeometry x="33.69" y="340.00186440677965" width="250" height="199.32203389830505" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-17" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-16">
+          <mxGeometry width="249.99999999999997" height="139.52542372881348" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-18" value="UserProfileDA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-16">
+          <mxGeometry x="22.55317808208388" y="47.45762711864406" width="95.23809523809523" height="30.66711864406779" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-19" value="MembershipApplicationDA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-16">
+          <mxGeometry x="22.557553797887856" y="94.91841807909603" width="176.2847421678229" height="30.666064030131825" as="geometry" />
+        </mxCell>
+        <mxCell id="0Zpsf17URbtu8yMTiDL6-20" value="profileUpdateDA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0Zpsf17URbtu8yMTiDL6-16">
+          <mxGeometry x="22.55317808208388" y="142.3728813559322" width="166.66666666666669" height="30.66711864406779" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

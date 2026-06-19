@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B62B4534-25B5-4792-97F4-47F824425F6E}|FinalProject\\FinalProject.vcxproj|D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\FinalProject\\FinalProject\\FinalCode.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B62B4534-25B5-4792-97F4-47F824425F6E}|FinalProject\\FinalProject.vcxproj|solutionrelative:FinalProject\\FinalCode.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FinalCode.asm",
+              "DocumentMoniker": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\FinalProject\\FinalProject\\FinalCode.asm",
+              "RelativeDocumentMoniker": "FinalProject\\FinalCode.asm",
+              "ToolTip": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\FinalProject\\FinalProject\\FinalCode.asm",
+              "RelativeToolTip": "FinalProject\\FinalCode.asm",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-10T04:42:02.857Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

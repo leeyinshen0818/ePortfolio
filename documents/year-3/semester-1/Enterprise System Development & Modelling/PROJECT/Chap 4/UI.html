@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Compliance & Reporting System | UTHM Prototype</title>
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons (via CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Custom Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+        
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+        
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease-out; }
+        
+        /* Navigation Active State */
+        .nav-item.active {
+            background-color: #1e3a8a; /* Blue-900 */
+            border-left: 4px solid #60a5fa; /* Blue-400 */
+        }
+        
+        /* CSS Chart Animations */
+        .bar-fill {
+            height: 0;
+            transition: height 1s ease-out;
+        }
+        
+        /* Modal Overlay */
+        .modal {
+            display: none;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal.open { display: flex; }
+
+        /* Toast Notification */
+        #toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+        }
+        .toast {
+            background: white;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            animation: slideIn 0.3s ease-out;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen overflow-hidden flex flex-col">
+
+    <!-- === LOGIN SCREEN OVERLAY === -->
+    <div id="login-screen" class="fixed inset-0 bg-slate-900 z-50 flex flex-col items-center justify-center text-white">
+        <div class="w-full max-w-md bg-slate-800 p-8 rounded-lg shadow-2xl border-t-4 border-blue-500">
+            <div class="text-center mb-8">
+                <i class="fa-solid fa-shield-halved text-5xl text-blue-400 mb-4"></i>
+                <h1 class="text-2xl font-bold">COMPLY<span class="text-blue-400">HR</span> SYSTEM</h1>
+                <p class="text-slate-400 text-sm mt-2">UTHM Enterprise Resource Planning</p>
+            </div>
+            <form onsubmit="event.preventDefault(); handleLogin();">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2 text-slate-300">Staff ID</label>
+                    <input type="text" value="STF1234" class="w-full p-3 rounded bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium mb-2 text-slate-300">Password</label>
+                    <input type="password" value="password" class="w-full p-3 rounded bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded transition shadow-lg">
+                    Login securely <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </form>
+            <p class="text-center text-xs text-slate-500 mt-6">Restricted Access. Authorized Personnel Only.</p>
+        </div>
+    </div>
+
+    <!-- === MAIN APPLICATION === -->
+    <div id="app-container" class="flex-1 flex overflow-hidden opacity-0 transition-opacity duration-500">
+        
+        <!-- SIDEBAR -->
+        <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-xl">
+            <!-- Brand -->
+            <div class="h-16 flex items-center justify-center border-b border-slate-800 bg-slate-950">
+                <h2 class="text-lg font-bold tracking-wide"><i class="fa-solid fa-shield-halved mr-2 text-blue-500"></i> COMPLY<span class="text-blue-500">HR</span></h2>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="flex-1 overflow-y-auto py-6">
+                <ul class="space-y-1">
+                    <li>
+                        <button onclick="switchTab('dashboard')" id="btn-dashboard" class="nav-item w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center active">
+                            <i class="fa-solid fa-chart-line w-8 text-center"></i> Dashboard
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('reports')" id="btn-reports" class="nav-item w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center">
+                            <i class="fa-solid fa-file-invoice w-8 text-center"></i> Statutory Reports
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('rules')" id="btn-rules" class="nav-item w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center">
+                            <i class="fa-solid fa-sliders w-8 text-center"></i> Compliance Rules
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('audit')" id="btn-audit" class="nav-item w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center">
+                            <i class="fa-solid fa-file-shield w-8 text-center"></i> Audit Logs
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- User Profile -->
+            <div class="p-4 border-t border-slate-800 bg-slate-900">
+                <div class="flex items-center gap-3">
+                    <img src="https://ui-avatars.com/api/?name=Ali+Abu&background=3b82f6&color=fff" class="w-10 h-10 rounded-full">
+                    <div>
+                        <p class="text-sm font-semibold">Ali Bin Abu</p>
+                        <p class="text-xs text-slate-400">Compliance Officer</p>
+                    </div>
+                </div>
+                <button onclick="location.reload()" class="mt-3 w-full text-xs text-slate-400 hover:text-white flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="flex-1 flex flex-col bg-gray-50 h-full relative">
+            
+            <!-- HEADER -->
+            <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 z-10">
+                <h2 id="page-title" class="text-xl font-bold text-slate-800">Executive Dashboard</h2>
+                <div class="flex items-center gap-4">
+                    <span class="text-xs text-gray-500 bg-gray-100 px-3 py-1 rounded-full border border-gray-200">
+                        <i class="fa-solid fa-server mr-1 text-green-500"></i> System Online
+                    </span>
+                    <button class="relative p-2 text-gray-400 hover:text-blue-600 transition">
+                        <i class="fa-solid fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white"></span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- CONTENT SCROLL AREA -->
+            <div class="flex-1 overflow-y-auto p-8">
+                
+                <!-- === TAB 1: DASHBOARD === -->
+                <div id="dashboard" class="tab-content active">
+                    <!-- KPI Stats -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-b-4 border-green-500 hover:shadow-md transition">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Compliance Score</p>
+                            <div class="flex justify-between items-end mt-2">
+                                <h3 class="text-3xl font-bold text-slate-800">98.5%</h3>
+                                <span class="text-green-600 text-sm font-bold bg-green-50 px-2 py-1 rounded"><i class="fa-solid fa-arrow-up"></i> 2.1%</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-b-4 border-red-500 hover:shadow-md transition">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Active Violations</p>
+                            <div class="flex justify-between items-end mt-2">
+                                <h3 class="text-3xl font-bold text-slate-800">3</h3>
+                                <span class="text-red-600 text-sm font-bold bg-red-50 px-2 py-1 rounded">Action Req</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-b-4 border-blue-500 hover:shadow-md transition">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Reports Generated</p>
+                            <div class="flex justify-between items-end mt-2">
+                                <h3 class="text-3xl font-bold text-slate-800">12</h3>
+                                <i class="fa-solid fa-file-pdf text-gray-300 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-b-4 border-yellow-500 hover:shadow-md transition">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Pending Audits</p>
+                            <div class="flex justify-between items-end mt-2">
+                                <h3 class="text-3xl font-bold text-slate-800">1</h3>
+                                <span class="text-yellow-600 text-sm font-bold bg-yellow-50 px-2 py-1 rounded">Due: 5 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- CSS Bar Chart -->
+                        <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="font-bold text-slate-700">Monthly Compliance Trend (2025)</h3>
+                                <select class="text-xs border rounded p-1 bg-gray-50"><option>This Year</option></select>
+                            </div>
+                            <!-- Chart Container -->
+                            <div class="h-64 w-full relative">
+                                <svg viewBox="0 0 800 250" class="w-full h-full overflow-visible">
+                                    <!-- Grid Lines -->
+                                    <line x1="0" y1="200" x2="800" y2="200" stroke="#e2e8f0" stroke-width="2" />
+                                    <line x1="0" y1="150" x2="800" y2="150" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4" />
+                                    <line x1="0" y1="100" x2="800" y2="100" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4" />
+                                    <line x1="0" y1="50" x2="800" y2="50" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4" />
+                                    
+                                    <!-- Gradient Def -->
+                                    <defs>
+                                        <linearGradient id="trendGradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+                                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Fill Area -->
+                                    <path d="M0,200 L0,180 L100,165 L200,170 L300,140 L400,130 L500,110 L600,115 L700,50 L800,40 L800,200 Z" 
+                                          fill="url(#trendGradient)" />
+
+                                    <!-- Trend Line -->
+                                    <polyline points="0,180 100,165 200,170 300,140 400,130 500,110 600,115 700,50 800,40" 
+                                              fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <!-- Data Points -->
+                                    <circle cx="0" cy="180" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="100" cy="165" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="200" cy="170" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="300" cy="140" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="400" cy="130" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="500" cy="110" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="600" cy="115" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="700" cy="50" r="4" fill="white" stroke="#2563eb" stroke-width="2" />
+                                    <circle cx="800" cy="40" r="6" fill="#2563eb" stroke="white" stroke-width="2" />
+
+                                    <!-- Labels (SVG text for perfect scaling) -->
+                                    <text x="10" y="220" class="text-xs fill-gray-400">Jan</text>
+                                    <text x="100" y="220" class="text-xs fill-gray-400">Feb</text>
+                                    <text x="200" y="220" class="text-xs fill-gray-400">Mar</text>
+                                    <text x="300" y="220" class="text-xs fill-gray-400">Apr</text>
+                                    <text x="400" y="220" class="text-xs fill-gray-400">May</text>
+                                    <text x="500" y="220" class="text-xs fill-gray-400">Jun</text>
+                                    <text x="600" y="220" class="text-xs fill-gray-400">Jul</text>
+                                    <text x="700" y="220" class="text-xs fill-gray-400">Aug</text>
+                                    <text x="780" y="220" class="text-xs font-bold fill-blue-600">Sep</text>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Alerts Panel -->
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-slate-700 mb-4">Critical Alerts</h3>
+                            <div class="space-y-4">
+                                <div class="flex gap-3 p-3 bg-red-50 border border-red-100 rounded-md">
+                                    <div class="mt-1"><i class="fa-solid fa-triangle-exclamation text-red-500"></i></div>
+                                    <div>
+                                        <p class="text-sm font-bold text-red-700">Overtime Breach</p>
+                                        <p class="text-xs text-gray-600">Emp #2938 exceeded 104 hours/month limit.</p>
+                                        <p class="text-[10px] text-gray-400 mt-1">12 mins ago</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 p-3 bg-yellow-50 border border-yellow-100 rounded-md">
+                                    <div class="mt-1"><i class="fa-solid fa-id-card text-yellow-500"></i></div>
+                                    <div>
+                                        <p class="text-sm font-bold text-yellow-700">License Expiry</p>
+                                        <p class="text-xs text-gray-600">Safety Cert for Staff #4421 expires in 3 days.</p>
+                                        <p class="text-[10px] text-gray-400 mt-1">2 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-full mt-4 text-center text-sm text-blue-600 hover:underline">View All Alerts</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === TAB 2: REPORTS === -->
+                <div id="reports" class="tab-content">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Generator Form -->
+                        <div class="bg-white p-6 rounded-lg shadow-sm h-fit border-t-4 border-blue-600">
+                            <h3 class="text-lg font-bold text-slate-800 mb-6 border-b pb-4">Generate New Report</h3>
+                            <form id="reportForm" onsubmit="event.preventDefault(); generateReport();">
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">Select Period</label>
+                                    <input type="month" id="reportDate" class="w-full border border-gray-300 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" value="2025-10" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">Form Type</label>
+                                    <select id="reportType" class="w-full border border-gray-300 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                        <option value="EPF Borang A">EPF (KWSP) Borang A</option>
+                                        <option value="SOCSO Form 8A">SOCSO (PERKESO) Form 8A</option>
+                                        <option value="Tax CP39">Income Tax (LHDN) CP39</option>
+                                        <option value="EIS Contribution">EIS Contribution Form</option>
+                                    </select>
+                                </div>
+                                <div class="mb-6">
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">Output Format</label>
+                                    <div class="flex gap-4">
+                                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="fmt" checked> <span class="text-sm"><i class="fa-solid fa-file-pdf text-red-500"></i> PDF</span></label>
+                                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="fmt"> <span class="text-sm"><i class="fa-solid fa-file-excel text-green-500"></i> Excel</span></label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded shadow transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-gears"></i> Generate Now
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- History Table -->
+                        <div class="bg-white p-6 rounded-lg shadow-sm lg:col-span-2">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="text-lg font-bold text-slate-800">Generation History</h3>
+                                <button class="text-sm text-blue-600 hover:underline"><i class="fa-solid fa-download"></i> Export Log</button>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-200" id="reportTable">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Report Name</th>
+                                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Period</th>
+                                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Status</th>
+                                            <th class="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                                        <tr>
+                                            <td class="px-6 py-4 font-medium text-gray-900">EPF Borang A</td>
+                                            <td class="px-6 py-4 text-gray-500">Sep 2025</td>
+                                            <td class="px-6 py-4"><span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-bold">Success</span></td>
+                                            <td class="px-6 py-4 text-right"><button class="text-blue-600 hover:underline font-medium">Download</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-6 py-4 font-medium text-gray-900">Tax CP39</td>
+                                            <td class="px-6 py-4 text-gray-500">Sep 2025</td>
+                                            <td class="px-6 py-4"><span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-bold">Failed</span></td>
+                                            <td class="px-6 py-4 text-right"><button class="text-gray-400 hover:text-gray-600">Retry</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === TAB 3: RULES === -->
+                <div id="rules" class="tab-content">
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <div class="p-6 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Compliance Parameters</h3>
+                                <p class="text-sm text-gray-500">Global settings used for calculations.</p>
+                            </div>
+                            <button onclick="openModal()" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded text-sm shadow flex items-center gap-2">
+                                <i class="fa-solid fa-plus"></i> Add New Rule
+                            </button>
+                        </div>
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Rule Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Current Value</th>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Last Updated</th>
+                                    <th class="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                                <tr class="hover:bg-blue-50 transition">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Employee EPF Rate</td>
+                                    <td class="px-6 py-4 text-blue-600 font-bold">11.00 %</td>
+                                    <td class="px-6 py-4 text-gray-500">01 Jan 2025</td>
+                                    <td class="px-6 py-4 text-right"><button onclick="openModal('Employee EPF Rate', '11.00')" class="text-gray-400 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                                </tr>
+                                <tr class="hover:bg-blue-50 transition">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Employer EPF Rate</td>
+                                    <td class="px-6 py-4 text-blue-600 font-bold">13.00 %</td>
+                                    <td class="px-6 py-4 text-gray-500">01 Jan 2025</td>
+                                    <td class="px-6 py-4 text-right"><button onclick="openModal('Employer EPF Rate', '13.00')" class="text-gray-400 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                                </tr>
+                                <tr class="hover:bg-blue-50 transition">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Max Overtime Limit</td>
+                                    <td class="px-6 py-4 text-blue-600 font-bold">104 Hours</td>
+                                    <td class="px-6 py-4 text-gray-500">01 Jan 2023</td>
+                                    <td class="px-6 py-4 text-right"><button onclick="openModal('Max Overtime Limit', '104')" class="text-gray-400 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- === TAB 4: AUDIT === -->
+                <div id="audit" class="tab-content">
+                    <div class="bg-white rounded-lg shadow-sm p-8 text-center border border-gray-200">
+                        <div class="mb-6">
+                            <span class="bg-gray-100 p-4 rounded-full inline-block"><i class="fa-solid fa-lock text-4xl text-gray-400"></i></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800">Secure Audit Logs</h3>
+                        <p class="text-gray-500 mb-8 max-w-md mx-auto">This section is immutable. Logs are recorded on the blockchain for integrity.</p>
+                        
+                        <div class="text-left border rounded-lg overflow-hidden">
+                            <div class="bg-gray-50 px-6 py-3 border-b text-xs font-bold text-gray-500 uppercase flex justify-between">
+                                <span>Recent Activity</span>
+                                <span>User: Ali Bin Abu</span>
+                            </div>
+                            <div class="divide-y divide-gray-100 text-sm">
+                                <div class="px-6 py-3 flex justify-between hover:bg-gray-50">
+                                    <span><i class="fa-solid fa-clock text-gray-300 mr-2"></i> 10:45 AM - Updated EPF Rate</span>
+                                    <span class="text-gray-400">Success</span>
+                                </div>
+                                <div class="px-6 py-3 flex justify-between hover:bg-gray-50">
+                                    <span><i class="fa-solid fa-clock text-gray-300 mr-2"></i> 09:30 AM - Generated Monthly Report</span>
+                                    <span class="text-gray-400">Success</span>
+                                </div>
+                                <div class="px-6 py-3 flex justify-between hover:bg-gray-50 bg-red-50">
+                                    <span><i class="fa-solid fa-triangle-exclamation text-red-400 mr-2"></i> Yesterday - Login Failed (3 attempts)</span>
+                                    <span class="text-red-500 font-bold">Alert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- === TOAST NOTIFICATION === -->
+    <div id="toast-container"></div>
+
+    <!-- === EDIT MODAL === -->
+    <div id="ruleModal" class="modal fixed inset-0 z-50 items-center justify-center backdrop-blur-sm">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-md p-6 transform transition-all scale-100">
+            <h3 class="text-lg font-bold text-slate-800 mb-4" id="modalTitle">Edit Rule</h3>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-600 mb-2">Parameter Value</label>
+                <input type="text" id="modalInput" class="w-full border border-gray-300 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+            <div class="flex justify-end gap-3">
+                <button onclick="closeModal()" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded">Cancel</button>
+                <button onclick="saveRule()" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // === LOGIC ===
+
+        // 1. Fake Login
+        function handleLogin() {
+            const loginScreen = document.getElementById('login-screen');
+            const app = document.getElementById('app-container');
+            
+            // Animation out
+            loginScreen.style.opacity = '0';
+            setTimeout(() => {
+                loginScreen.style.display = 'none';
+                app.style.opacity = '1';
+                
+                // Trigger chart animations after login
+                setTimeout(animateCharts, 500);
+            }, 500);
+        }
+
+        // 2. Tab Switching
+        function switchTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            // Reset nav buttons
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            
+            // Activate selected
+            document.getElementById(tabId).classList.add('active');
+            document.getElementById('btn-' + tabId).classList.add('active');
+
+            // Update Header Title
+            const titles = {
+                'dashboard': 'Executive Overview',
+                'reports': 'Statutory Reporting',
+                'rules': 'Compliance Configuration',
+                'audit': 'Audit & Security'
+            };
+            document.getElementById('page-title').innerText = titles[tabId];
+        }
+
+        // 3. Chart Animation
+        function animateCharts() {
+            const bars = document.querySelectorAll('.bar-fill');
+            bars.forEach(bar => {
+                const h = bar.getAttribute('data-height');
+                bar.style.height = h;
+            });
+        }
+
+        // 4. Report Generation Simulation
+        function generateReport() {
+            const type = document.getElementById('reportType').value;
+            const date = document.getElementById('reportDate').value;
+            const table = document.getElementById('reportTable').querySelector('tbody');
+
+            // Show Toast
+            showToast(`Generating ${type}...`, 'info');
+
+            // Simulate loading delay
+            setTimeout(() => {
+                const row = document.createElement('tr');
+                row.className = "bg-blue-50 transition duration-500"; // Highlight new row
+                row.innerHTML = `
+                    <td class="px-6 py-4 font-medium text-gray-900">${type}</td>
+                    <td class="px-6 py-4 text-gray-500">${date}</td>
+                    <td class="px-6 py-4"><span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-bold">Success</span></td>
+                    <td class="px-6 py-4 text-right"><button class="text-blue-600 hover:underline font-bold">Download</button></td>
+                `;
+                
+                // Add to top of table
+                table.insertBefore(row, table.firstChild);
+                showToast('Report generated successfully!', 'success');
+            }, 1500);
+        }
+
+        // 5. Modal Logic
+        function openModal(title = "Add New Rule", val = "") {
+            document.getElementById('modalTitle').innerText = title === "Add New Rule" ? "Add New Rule" : "Edit " + title;
+            document.getElementById('modalInput').value = val;
+            document.getElementById('ruleModal').classList.add('open');
+        }
+        function closeModal() {
+            document.getElementById('ruleModal').classList.remove('open');
+        }
+        function saveRule() {
+            closeModal();
+            showToast('Compliance Parameter Updated.', 'success');
+        }
+
+        // 6. Toast Notification
+        function showToast(msg, type) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            
+            let icon = type === 'success' ? '<i class="fa-solid fa-check-circle text-green-500"></i>' : '<i class="fa-solid fa-spinner fa-spin text-blue-500"></i>';
+            if(type === 'success') toast.style.borderLeftColor = '#10b981';
+            else toast.style.borderLeftColor = '#3b82f6';
+
+            toast.innerHTML = `${icon} <span class="text-sm font-medium text-gray-700">${msg}</span>`;
+            
+            container.appendChild(toast);
+            
+            // Remove after 3s
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

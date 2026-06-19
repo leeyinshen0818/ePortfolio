@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "695abc9cf084f228b404f029"
+  },
+  "title": "Grab Tech Summit 2026",
+  "category": "Technology",
+  "organizerID": {
+    "$oid": "695ab30df084f228b404f025"
+  },
+  "location": "Kuala Lumpur",
+  "eventDate": {
+    "$date": "2026-06-15T00:00:00.000Z"
+  },
+  "price": 100,
+  "capacity": 100,
+  "tags": [
+    "Technology",
+    "Innovation",
+    "Networking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "695abc9cf084f228b404f02a"
+  },
+  "title": "Lazada Online Seller Workshop",
+  "category": "Business",
+  "organizerID": {
+    "$oid": "695ab30df084f228b404f027"
+  },
+  "location": "Kuala Lumpur",
+  "eventDate": {
+    "$date": "2026-05-10T00:00:00.000Z"
+  },
+  "price": 50,
+  "capacity": 70,
+  "tags": [
+    "Business",
+    "E-Commerse",
+    "Workshop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "695abc9cf084f228b404f02b"
+  },
+  "title": "Shopee E-Commerse Expo",
+  "category": "Business",
+  "organizerID": {
+    "$oid": "695ab30df084f228b404f026"
+  },
+  "location": "Johor Bahru",
+  "eventDate": {
+    "$date": "2026-04-20T00:00:00.000Z"
+  },
+  "price": 20,
+  "capacity": 300,
+  "tags": [
+    "Business",
+    "E-Commerse",
+    "Expo"
+  ]
+},
+{
+  "_id": {
+    "$oid": "695abc9cf084f228b404f02c"
+  },
+  "title": "Grab Ride & Tech Conference",
+  "category": "Technology",
+  "organizerID": {
+    "$oid": "695ab30df084f228b404f025"
+  },
+  "location": "Johor Bahru",
+  "eventDate": {
+    "$date": "2026-02-24T16:00:00.000Z"
+  },
+  "price": 50,
+  "capacity": 150,
+  "tags": [
+    "Technology",
+    "Conference",
+    "Mobility"
+  ]
+},
+{
+  "_id": {
+    "$oid": "695abc9cf084f228b404f02d"
+  },
+  "title": "Lazada Seller Growth Seminar",
+  "category": "Business",
+  "organizerID": {
+    "$oid": "695ab30df084f228b404f027"
+  },
+  "location": "Selangor",
+  "eventDate": {
+    "$date": "2026-03-13T00:00:00.000Z"
+  },
+  "price": 80,
+  "capacity": 100,
+  "tags": [
+    "Business",
+    "Seminar"
+  ]
+}]

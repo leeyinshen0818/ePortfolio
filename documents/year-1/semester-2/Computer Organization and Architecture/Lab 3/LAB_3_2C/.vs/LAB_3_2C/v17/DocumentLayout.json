@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB_3_2C\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43EF55A9-5EE7-4474-830C-CCE5B664CB91}|LAB_3_2C\\LAB_3_2C.vcxproj|D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB_3_2C\\LAB_3_2C\\2C.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43EF55A9-5EE7-4474-830C-CCE5B664CB91}|LAB_3_2C\\LAB_3_2C.vcxproj|solutionrelative:LAB_3_2C\\2C.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "2C.asm",
+              "DocumentMoniker": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB_3_2C\\LAB_3_2C\\2C.asm",
+              "RelativeDocumentMoniker": "LAB_3_2C\\2C.asm",
+              "ToolTip": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB_3_2C\\LAB_3_2C\\2C.asm",
+              "RelativeToolTip": "LAB_3_2C\\2C.asm",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-02T11:13:50.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

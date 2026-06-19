@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2353F0-8A97-4CA5-BB3F-9C7C527222E6}|LAB3\\LAB3.vcxproj|D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB3\\LAB3\\1CB.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FE2353F0-8A97-4CA5-BB3F-9C7C527222E6}|LAB3\\LAB3.vcxproj|solutionrelative:LAB3\\1CB.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1CB.asm",
+              "DocumentMoniker": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB3\\LAB3\\1CB.asm",
+              "RelativeDocumentMoniker": "LAB3\\1CB.asm",
+              "ToolTip": "D:\\Users\\Nitro\\Documents\\YEAR 1\\SEM2\\COMPUTER ORGANIZATION AND ARCHITECTURE\\LAB3\\LAB3\\LAB3\\1CB.asm",
+              "RelativeToolTip": "LAB3\\1CB.asm",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-28T09:35:19.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

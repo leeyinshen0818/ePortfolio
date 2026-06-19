@@ -1,0 +1,117 @@
+Column,Encoded Value,Original Value
+Gender,0,Female
+Gender,1,Male
+Category,0,Accessories
+Category,1,Clothing
+Category,2,Footwear
+Category,3,Outerwear
+Location,0,Alabama
+Location,1,Alaska
+Location,2,Arizona
+Location,3,Arkansas
+Location,4,California
+Location,5,Colorado
+Location,6,Connecticut
+Location,7,Delaware
+Location,8,Florida
+Location,9,Georgia
+Location,10,Hawaii
+Location,11,Idaho
+Location,12,Illinois
+Location,13,Indiana
+Location,14,Iowa
+Location,15,Kansas
+Location,16,Kentucky
+Location,17,Louisiana
+Location,18,Maine
+Location,19,Maryland
+Location,20,Massachusetts
+Location,21,Michigan
+Location,22,Minnesota
+Location,23,Mississippi
+Location,24,Missouri
+Location,25,Montana
+Location,26,Nebraska
+Location,27,Nevada
+Location,28,New Hampshire
+Location,29,New Jersey
+Location,30,New Mexico
+Location,31,New York
+Location,32,North Carolina
+Location,33,North Dakota
+Location,34,Ohio
+Location,35,Oklahoma
+Location,36,Oregon
+Location,37,Pennsylvania
+Location,38,Rhode Island
+Location,39,South Carolina
+Location,40,South Dakota
+Location,41,Tennessee
+Location,42,Texas
+Location,43,Utah
+Location,44,Vermont
+Location,45,Virginia
+Location,46,Washington
+Location,47,West Virginia
+Location,48,Wisconsin
+Location,49,Wyoming
+Size,0,L
+Size,1,M
+Size,2,S
+Size,3,XL
+Color,0,Beige
+Color,1,Black
+Color,2,Blue
+Color,3,Brown
+Color,4,Charcoal
+Color,5,Cyan
+Color,6,Gold
+Color,7,Gray
+Color,8,Green
+Color,9,Indigo
+Color,10,Lavender
+Color,11,Magenta
+Color,12,Maroon
+Color,13,Olive
+Color,14,Orange
+Color,15,Peach
+Color,16,Pink
+Color,17,Purple
+Color,18,Red
+Color,19,Silver
+Color,20,Teal
+Color,21,Turquoise
+Color,22,Violet
+Color,23,White
+Color,24,Yellow
+Season,0,Fall
+Season,1,Spring
+Season,2,Summer
+Season,3,Winter
+Subscription Status,0,No
+Subscription Status,1,Yes
+Shipping Type,0,2-Day Shipping
+Shipping Type,1,Express
+Shipping Type,2,Next Day Air
+Shipping Type,3,Standard
+Shipping Type,4,Store Pickup
+Discount Applied,0,No
+Discount Applied,1,Yes
+Promo Code Used,0,No
+Promo Code Used,1,Yes
+Payment Method,0,Bank Transfer
+Payment Method,1,Cash
+Payment Method,2,Credit Card
+Payment Method,3,Debit Card
+Payment Method,4,PayPal
+Payment Method,5,Venmo
+Frequency of Purchases,0,Annually
+Frequency of Purchases,1,Bi-Weekly
+Frequency of Purchases,2,Every 3 Months
+Frequency of Purchases,3,Fortnightly
+Frequency of Purchases,4,Monthly
+Frequency of Purchases,5,Quarterly
+Frequency of Purchases,6,Weekly
+Customer Income Level,0,High
+Customer Income Level,1,Low
+Customer Income Level,2,Medium

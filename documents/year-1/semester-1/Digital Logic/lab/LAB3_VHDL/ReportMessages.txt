@@ -1,0 +1,31 @@
+(Info) ************************************************************************
+(Info) Deeds VHDL converter (ver. 2.50.200) is running...
+(Info) Convertion started (9:44:22 PM, 1/5/2024) on file:
+(Info) --> "D:\Documents\YEAR 1\Digital Logic\DEED\LAB3.pbs"
+(Info) ------------------------------------------------------------------------
+(Info) Converting schematic file "LAB3.pbs" into VHDL
+(Info) --> Top level VHDL file: "LAB3.vhd"
+(Info) Extracting and Coding VHDL components
+(Info) VHDL components coded (file: "Components.vhd", 2593 bytes)
+(Info) Processing Input and Output Signals
+(Warning) Input "PRE" [Id#2] renamed to "iPRE"
+(Warning) Input "Switch 7" [Id#3] renamed to "iSwitch_7"
+(Warning) Input "CLR" [Id#11] renamed to "iCLR"
+(Warning) Input "Switch A" [Id#12] renamed to "iSwitch_A"
+(Warning) Output "LED 1" [Id#13] renamed to "oLED_1"
+(Warning) Output "LED0" [Id#14] renamed to "oLED0"
+(Info) 4 Native Input(s), 2 Native Output(s) processed.
+(Info) 0 Added Input(s), 0 Added Output(s), 0 Default Output(s).
+(Info) Top level structural VHDL description coded (file "LAB3.vhd", 2702 bytes)
+(Info) ------------------------------------------------------------------------
+(Info) Saving all the VHDL files in the subfolder:
+(Info) --> "D:\Documents\YEAR 1\Digital Logic\DEED\LAB3_VHDL"
+(Info)   |--- "Components.vhd" file saved.
+(Info)   |--- "LAB3.vhd" file saved.
+(Info) ------------------------------------------------------------------------
+(Info) ------------------------------------------------------------------------
+(Info) This message list saved on file:
+(Info) --> "D:\Documents\YEAR 1\Digital Logic\DEED\LAB3_VHDL\ReportMessages.txt"
+(Info) ------------------------------------------------------------------------
+(Info) All files saved! VHDL conversion ended (9:44:22 PM, 1/5/2024)
+(Info) ************************************************************************

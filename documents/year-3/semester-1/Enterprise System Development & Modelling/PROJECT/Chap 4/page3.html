@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans antialiased h-screen flex overflow-hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-2xl z-20">
+        <div class="h-16 flex items-center justify-center border-b border-slate-700 bg-slate-950">
+            <h1 class="text-xl font-bold tracking-wider"><i class="fa-solid fa-shield-halved mr-2 text-blue-400"></i> COMPLY<span class="text-blue-400">HR</span></h1>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-4">
+            <ul class="space-y-1">
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-gauge-high w-6"></i> Dashboard</button></li>
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-file-contract w-6"></i> Statutory Reports</button></li>
+                <!-- Rules Active -->
+                <li><button class="w-full text-left px-6 py-3 bg-blue-900 border-l-4 border-blue-400 flex items-center"><i class="fa-solid fa-sliders w-6"></i> Compliance Rules</button></li>
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-list-ol w-6"></i> Audit Logs</button></li>
+            </ul>
+        </nav>
+        <div class="p-4 border-t border-slate-700">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center font-bold">CO</div>
+                <div><p class="text-sm font-semibold">Ali Bin Abu</p><p class="text-xs text-gray-400">Compliance Officer</p></div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden relative">
+        <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 z-10">
+            <h2 class="text-xl font-semibold text-gray-800">Compliance Configuration</h2>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">Export Data</button>
+        </header>
+
+        <div class="flex-1 overflow-y-auto p-8 bg-gray-50">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800">Compliance Parameters</h3>
+                        <p class="text-sm text-gray-500">Manage rates based on Government Gazettes.</p>
+                    </div>
+                    <button class="bg-slate-800 text-white px-4 py-2 rounded text-sm hover:bg-slate-700"><i class="fa-solid fa-plus mr-1"></i> Add Rule</button>
+                </div>
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Rule Name</th>
+                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Current Value</th>
+                            <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Last Updated</th>
+                            <th class="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Employee EPF Rate</td>
+                            <td class="px-6 py-4 text-blue-600 font-bold">11.00 %</td>
+                            <td class="px-6 py-4 text-gray-500">01 Jan 2025</td>
+                            <td class="px-6 py-4 text-right"><button class="text-gray-500 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Max Overtime Limit</td>
+                            <td class="px-6 py-4 text-blue-600 font-bold">104 Hours</td>
+                            <td class="px-6 py-4 text-gray-500">01 Jan 2023</td>
+                            <td class="px-6 py-4 text-right"><button class="text-gray-500 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Minimum Wage</td>
+                            <td class="px-6 py-4 text-blue-600 font-bold">RM 1,500.00</td>
+                            <td class="px-6 py-4 text-gray-500">01 May 2022</td>
+                            <td class="px-6 py-4 text-right"><button class="text-gray-500 hover:text-blue-600"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

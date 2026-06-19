@@ -1,0 +1,6 @@
+Input: 
+A data engineer is someone who builds and maintains the systems that data scientists and data analysts use to collect, store, and analyze data. They use their skills to design and build data pipelines, and to ensure that data is stored in a secure and efficient way. Data engineers are in high demand across a wide range of industries, including finance, healthcare, retail, and technology.
+
+Total words: 65
+Total keywords: 7
+Percentage of lines containing 'data': 10.77%

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> .chart-bar:hover { opacity: 0.8; } </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased h-screen flex overflow-hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-2xl z-20">
+        <div class="h-16 flex items-center justify-center border-b border-slate-700 bg-slate-950">
+            <h1 class="text-xl font-bold tracking-wider"><i class="fa-solid fa-shield-halved mr-2 text-blue-400"></i> COMPLY<span class="text-blue-400">HR</span></h1>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-4">
+            <ul class="space-y-1">
+                <!-- Dashboard Active -->
+                <li><button class="w-full text-left px-6 py-3 bg-blue-900 border-l-4 border-blue-400 flex items-center"><i class="fa-solid fa-gauge-high w-6"></i> Dashboard</button></li>
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-file-contract w-6"></i> Statutory Reports</button></li>
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-sliders w-6"></i> Compliance Rules</button></li>
+                <li><button class="w-full text-left px-6 py-3 hover:bg-slate-800 transition flex items-center"><i class="fa-solid fa-list-ol w-6"></i> Audit Logs</button></li>
+            </ul>
+        </nav>
+        <div class="p-4 border-t border-slate-700">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center font-bold">CO</div>
+                <div><p class="text-sm font-semibold">Ali Bin Abu</p><p class="text-xs text-gray-400">Compliance Officer</p></div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden relative">
+        <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 z-10">
+            <h2 class="text-xl font-semibold text-gray-800">Executive Overview</h2>
+            <div class="flex items-center gap-4">
+                <button class="relative p-2 text-gray-500"><i class="fa-solid fa-bell text-xl"></i><span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span></button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">Export Data</button>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-y-auto p-8 bg-gray-50">
+            <!-- KPI Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                    <div class="flex justify-between items-start">
+                        <div><p class="text-xs font-bold text-gray-400 uppercase">Compliance Score</p><h3 class="text-3xl font-bold text-gray-800 mt-1">98.5%</h3></div>
+                        <span class="bg-green-100 text-green-600 py-1 px-2 rounded text-xs font-bold">+2.4%</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-red-500">
+                    <div class="flex justify-between items-start">
+                        <div><p class="text-xs font-bold text-gray-400 uppercase">Open Violations</p><h3 class="text-3xl font-bold text-gray-800 mt-1">3</h3></div>
+                        <span class="bg-red-100 text-red-600 py-1 px-2 rounded text-xs font-bold">Action Req</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <div class="flex justify-between items-start">
+                        <div><p class="text-xs font-bold text-gray-400 uppercase">Reports Generated</p><h3 class="text-3xl font-bold text-gray-800 mt-1">12</h3></div>
+                        <i class="fa-solid fa-file-pdf text-gray-300 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-yellow-500">
+                    <div class="flex justify-between items-start">
+                        <div><p class="text-xs font-bold text-gray-400 uppercase">Pending Audits</p><h3 class="text-3xl font-bold text-gray-800 mt-1">1</h3></div>
+                        <i class="fa-solid fa-clipboard-check text-gray-300 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts & Tables -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Chart -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-sm h-64 flex flex-col">
+                    <h3 class="font-bold text-gray-700 mb-4">Compliance Trend (2025)</h3>
+                    <div class="flex-1 flex items-end justify-between gap-2 px-2 pb-2 border-b border-l border-gray-200">
+                         <!-- Simplified Bars for Figma Import -->
+                         <div class="w-full bg-blue-200 h-[60%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-200 h-[75%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-300 h-[85%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-300 h-[82%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-400 h-[90%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-500 h-[95%] rounded-t-sm"></div>
+                         <div class="w-full bg-blue-600 h-[98%] rounded-t-sm"></div>
+                    </div>
+                    <div class="flex justify-between px-2 text-xs text-gray-500 mt-1">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span class="font-bold">Oct</span>
+                    </div>
+                </div>
+
+                <!-- Alerts List -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-gray-700 mb-4">Critical Alerts</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 p-3 bg-red-50 rounded-md border border-red-100">
+                            <i class="fa-solid fa-triangle-exclamation text-red-500 mt-1"></i>
+                            <div><p class="text-sm font-bold text-red-700">Overtime Breach</p><p class="text-xs text-gray-600">Emp #2938 > 104 hrs.</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-md border border-yellow-100">
+                            <i class="fa-solid fa-clock text-yellow-500 mt-1"></i>
+                            <div><p class="text-sm font-bold text-yellow-700">License Expiry</p><p class="text-xs text-gray-600">Safety Cert expires soon.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

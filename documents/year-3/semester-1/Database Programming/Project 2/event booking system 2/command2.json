@@ -1,0 +1,140 @@
+// 1. Create data
+
+// insertOne()
+db.participants.insertOne({
+  "firstName": "Ricky",
+  "lastName": "Tan",
+  "email": "ricky@gmail.com",
+  "phone": "012-9998887",
+  "gender": "Male",
+  "age": 21,
+  "address": "Selangor"
+})
+
+// insertMany()
+db.events.insertMany([
+  {
+    "title": "AI & Future Tech Symposium",
+    "category": "Technology",
+    "organizerID": ObjectId("695ab30df084f228b404f025"), 
+    "location": "Kuala Lumpur",
+    "eventDate": ISODate("2026-07-20T09:00:00Z"),
+    "price": 120,
+    "capacity": 200,
+    "tags": ["AI", "Future Tech", "Symposium"]
+  },
+  {
+    "title": "Digital Marketing Mastery 2026",
+    "category": "Business",
+    "organizerID": ObjectId("695ab30df084f228b404f026"),
+    "location": "Penang",
+    "eventDate": ISODate("2026-08-15T10:00:00Z"),
+    "price": 45,
+    "capacity": 80,
+    "tags": ["Marketing", "Digital", "Workshop"]
+  },
+  {
+    "title": "Cloud Computing Bootcamp",
+    "category": "Technology",
+    "organizerID": ObjectId("695ab30df084f228b404f025"),
+    "location": "Online",
+    "eventDate": ISODate("2026-09-05T08:00:00Z"),
+    "price": 60,
+    "capacity": 500,
+    "tags": ["Cloud", "Coding", "Education"]
+  }
+])
+
+// 2. Read data
+
+// find()
+db.participants.find({ "gender": "Female" })
+
+// findOne()
+db.participants.findOne({ "gender": "Female" })
+
+// find() + $gt 
+db.events.find({
+  "price": { $gt: 60 }
+})
+
+// find() + $lt 
+db.participants.find({
+  "age": { $lt: 20 }
+})
+
+// find() + $eq 
+db.bookings.find({
+  "category": { $eq: "Business" }
+})
+
+// find() + $in 
+db.participants.find({
+  "address": { $in: ["Melaka"] }
+})
+
+// find() + $and + $gt
+db.events.find({
+  $and: [
+    { "location": "Kuala Lumpur" },
+    { "capacity": { $gt: 80 } }
+  ]
+})
+
+// find() + $or + $lt
+db.events.find({
+  $or: [
+    { "category": "Technology" },
+    { "price": { $lt: 30 } }
+  ]
+})
+
+// find() + array field
+db.events.find({
+  "tags": "Technology"
+})
+
+// find() + projection
+db.events.find(
+  {}, 
+  { "title": 1, "price": 1, "_id": 0 }
+)
+
+
+// 3. Update data
+
+// updateOne() + $set
+db.participants.updateOne(
+  { "firstName": "Ricky" },
+  { $set: { "phone": "012-3344556" } }
+)
+
+// updateMany() + $inc
+db.events.updateMany(
+  { "category": "Technology" },
+  { $inc: { "capacity": 50 } }
+)
+
+// updateOne() + $push + add to array field
+db.events.updateOne(
+  { "title": "Shopee E-Commerse Expo" },
+  { $push: { "tags": "Hot Selling" } }
+)
+
+// updateMany() + $pull + remove from array field
+db.events.updateMany(
+  { "tags": "Workshop" },
+  { $pull: { "tags": "Workshop" } }
+)
+
+// 4. Delete data
+
+// deleteOne()
+db.bookings.deleteOne({
+  "_id": ObjectId("695adc92f084f228b404f080")
+})
+
+// deleteMany()
+db.participants.deleteMany({
+  "address": "Melaka"
+})

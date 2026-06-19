@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "695ab30df084f228b404f025"
+  },
+  "name": "Grab",
+  "industry": "Technology",
+  "country": "Malaysia",
+  "contactEmail": "grab@gmail.com",
+  "contactNumber": "03-1111 5678"
+},
+{
+  "_id": {
+    "$oid": "695ab30df084f228b404f026"
+  },
+  "name": "Shopee",
+  "industry": "E-Commerse",
+  "country": "Malaysia",
+  "contactEmail": "shopee@gmail.com",
+  "contactNumber": "03-2222 5678"
+},
+{
+  "_id": {
+    "$oid": "695ab30df084f228b404f027"
+  },
+  "name": "Lazada",
+  "industry": "E-Commerse",
+  "country": "Malaysia",
+  "contactEmail": "lazada@gmail.com",
+  "contactNumber": "03-3333 5678"
+}]
