@@ -5,7 +5,7 @@
 **Student:** Lee Yin Shen  
 **Field:** Data Engineering  
 **GitHub:** [leeyinshen0818](https://github.com/leeyinshen0818)  
-**LinkedIn:** [To be updated](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
+**LinkedIn:** [Linkedin](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
 
 ## About Me
 
