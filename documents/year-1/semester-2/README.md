@@ -13,10 +13,14 @@ This semester expanded my programming foundation and introduced computer archite
 
 ## Semester Learning
 
-The coursework covered intermediate C++ development, assembly language, computer organisation, user-centred interface design, and structured system analysis. Projects required both implementation and formal documentation.
+The coursework expanded my C++ knowledge through a larger Programming Technique II project and introduced assembly language and computer organisation. These subjects helped me understand how high-level programs relate to processor operations, memory, and lower-level instructions.
+
+Human Computer Interaction and System Analysis and Design introduced a different side of system development. I learned to examine user needs, usability, requirements, processes, and interface design before implementation. The assignments and projects required source code, prototypes, diagrams, reports, and presentations, giving me experience in connecting technical development with formal documentation.
 
 ## Reflection
 
-I learned that a successful system depends on more than working code. Hardware constraints, user needs, requirements, interface design, and clear documentation all affect the quality of a solution.
+This semester showed me that a successful system depends on more than working code. Hardware constraints, user requirements, interface design, and clear documentation all affect whether a solution is practical and understandable. Assembly-language work was particularly challenging because it required careful attention to low-level operations and debugging.
+
+At the same time, the design-related subjects helped me become more aware of the people who use a system. I learned to consider usability and requirements earlier instead of treating them as final additions. Overall, the semester strengthened my programming ability and gave me a more complete view of the system-development process.
 
 [← Back to Year 1](../README.md)

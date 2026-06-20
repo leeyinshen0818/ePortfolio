@@ -13,10 +13,14 @@ This semester focuses on building practical applications and modern data workflo
 
 ## Semester Learning
 
-The available evidence includes Flutter applications, Firebase integration, Alteryx and Power BI work, Python performance comparisons, asynchronous web crawling, PySpark processing, Azure data engineering, Apache Spark, neural networks, and a dbt-based analytical pipeline.
+The coursework brings together mobile application development, business intelligence, scalable processing, cloud platforms, and artificial intelligence. Application Development includes Flutter applications, local storage, Firebase Authentication, Firestore, role-based features, and testing. Business Intelligence involves preparing structured data with Alteryx and presenting findings through Power BI.
+
+High-Performance Data Processing introduces memory-aware Python processing, performance comparison, asynchronous web crawling, and PySpark data preparation. Special Topic in Data Engineering includes Azure data layers, Apache Spark, neural-network evaluation, DuckDB, dbt, and analytical pipeline outputs. These activities provide practical experience across the collection, transformation, storage, analysis, and presentation stages of data work.
 
 ## Reflection
 
-This semester brings together software development and data engineering. I am learning to design usable applications while also considering how data is collected, transformed, stored, validated, analysed, and presented.
+This semester brings together software development and data engineering in a more complete way. I am learning to design usable applications while considering how data is collected, transformed, stored, validated, analysed, and presented. Working with several tools has also shown me that each technology is useful for a particular part of the workflow.
+
+The main challenge is managing the complexity of systems that contain many components, users, datasets, and processing stages. I have become more careful about project structure, data quality, testing, performance, and documentation. The semester is helping me develop a more practical understanding of how data engineering supports real applications and business decisions.
 
 [← Back to Year 3](../README.md)
