@@ -103,14 +103,20 @@ A C++ project that applies a FIFO queue to a convocation ceremony simulation.
 
 The repository is organised by year, semester, and subject. Each meaningful assignment, tutorial, lab, or project folder contains its own README with evidence links and reflection.
 
+### Year Navigation
+
+- [Year 1](documents/year-1/README.md)
+- [Year 2](documents/year-2/README.md)
+- [Year 3](documents/year-3/README.md)
+
 | Study period       | Main subjects                                                                    | Folder                                                                         |
 | ------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Year 1, Semester 1 | Digital Logic, Programming Technique I, Technology & Information System          | [Open folder](documents/year-1/semester-1)                                     |
-| Year 1, Semester 2 | Computer Architecture, HCI, Programming Technique II, System Analysis and Design | [Open folder](documents/year-1/semester-2)                                     |
-| Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development  | [Open folder](documents/year-2/semester-1)                                     |
-| Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System       | [Open folder](documents/year-2/semester-2)                                     |
-| Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems                | [Open folder](documents/year-3/semester-1)                                     |
-| Year 3, Semester 2 | Application Development, Business Intelligence, High-Performance Data Processing, Special Topic in Data Engineering | [Open folder](documents/year-3/semester-2) |
+| Year 1, Semester 1 | Digital Logic, Programming Technique I, Technology & Information System          | [Open semester](documents/year-1/semester-1/README.md)                         |
+| Year 1, Semester 2 | Computer Architecture, HCI, Programming Technique II, System Analysis and Design | [Open semester](documents/year-1/semester-2/README.md)                         |
+| Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development  | [Open semester](documents/year-2/semester-1/README.md)                         |
+| Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System       | [Open semester](documents/year-2/semester-2/README.md)                         |
+| Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems                | [Open semester](documents/year-3/semester-1/README.md)                         |
+| Year 3, Semester 2 | Application Development, Business Intelligence, High-Performance Data Processing, Special Topic in Data Engineering | [Open semester](documents/year-3/semester-2/README.md) |
 
 ## Skills and Technologies
 
