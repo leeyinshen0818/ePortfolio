@@ -1,0 +1,26 @@
+name: tvetmara_student_attendance
+description: TVETMARA Student Attendance Management System rebuilt with Flutter.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.6.0
+  cloud_firestore: ^5.6.0
+
+  uuid: any
+  excel: ^4.0.6
+  pdf: ^3.12.0
+  printing: ^5.14.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

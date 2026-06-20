@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input Customers Dataset</Name>
+          <DefaultAnnotationText>Input Customers Dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="customer_id" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv" type="V_String" />
+            <Field name="customer_unique_id" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv" type="V_String" />
+            <Field name="customer_zip_code_prefix" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv" type="V_String" />
+            <Field name="customer_city" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv" type="V_String" />
+            <Field name="customer_state" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_customers_dataset.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input Payments Dataset</Name>
+          <DefaultAnnotationText>Input Payments Dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv" type="V_String" />
+            <Field name="payment_sequential" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv" type="V_String" />
+            <Field name="payment_type" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv" type="V_String" />
+            <Field name="payment_installments" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv" type="V_String" />
+            <Field name="payment_value" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_order_payments_dataset.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input Orders Dataset</Name>
+          <DefaultAnnotationText>Input Orders Dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="customer_id" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_status" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_purchase_timestamp" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_approved_at" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_delivered_carrier_date" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_delivered_customer_date" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+            <Field name="order_estimated_delivery_date" size="254" source="File: D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\01_raw_data\olist_orders_dataset.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="232" y="52" width="681" height="453" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>1. Data Preparation and Integration</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>1. Data Preparation and Integration</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="order_purchase_timestamp" selected="True" type="DateTime" size="19" />
+                <SelectField field="order_approved_at" selected="True" type="DateTime" size="19" />
+                <SelectField field="order_delivered_carrier_date" selected="True" type="DateTime" size="19" />
+                <SelectField field="order_delivered_customer_date" selected="True" type="DateTime" size="19" />
+                <SelectField field="order_estimated_delivery_date" selected="True" type="DateTime" size="19" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="257" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="257" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="payment_sequential" selected="True" type="Int16" size="2" />
+                <SelectField field="payment_installments" selected="True" type="Int16" size="2" />
+                <SelectField field="payment_value" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings>
+            <Position x="354" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"customer_id","customer_unique_id","customer_zip_code_prefix","customer_city","customer_state"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Clean Customesr Data</Name>
+              <DefaultAnnotationText>Clean Customesr Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="474" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TitleCase([customer_city])" field="customer_city_clean" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="Uppercase([customer_state])" field="customer_state_clean" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>customer_city_clean = TitleCase([customer_city])
+customer_state_clean = Uppercas...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings>
+            <Position x="354" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"order_id","customer_id","order_status"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Clean Orders Data</Name>
+              <DefaultAnnotationText>Clean Orders Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="594" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="customer_city" selected="False" />
+                <SelectField field="customer_state" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Select Final Customer Fields</Name>
+              <DefaultAnnotationText>Select Final Customer Fields</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings>
+            <Position x="365" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"order_id","payment_type"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Clean Payments Data</Name>
+              <DefaultAnnotationText>Clean Payments Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="486" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[payment_value] &gt; 0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Filter Valid Payment Records</Name>
+              <DefaultAnnotationText>Filter Valid Payment Records</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="594" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="order_id" action="GroupBy" rename="order_id" />
+                <SummarizeField field="payment_value" action="Sum" rename="Total_Payment_Value" />
+                <SummarizeField field="payment_installments" action="Max" rename="Max_Payment_Installments" />
+                <SummarizeField field="payment_sequential" action="Count" rename="Payment_Record_Count" />
+                <SummarizeField field="payment_type" action="First" rename="Primary_Payment_Type" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Summarize Payments by Order ID</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="690" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Max_Payment_Installments] &lt;= 1 THEN &quot;Single Payment&quot;&#xA;ELSE &quot;Installment Payment&quot;&#xA;ENDIF" field="Payment_Category" size="30" type="V_String" enabled="true" />
+                <FormulaField expression="IF [Payment_Record_Count] = 1 THEN &quot;Single Payment Record&quot;&#xA;ELSE &quot;Multiple Payment Records&quot;&#xA;ENDIF" field="Payment_Complexity" size="30" type="V_String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Create Payment Category Fields</Name>
+              <DefaultAnnotationText>Create Payment Category Fields</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="690" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="customer_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="customer_id" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_customer_id" selected="True" rename="Right_customer_id" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Join Orders with Customers</Name>
+              <DefaultAnnotationText>Join Orders with Customers</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="798" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="order_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="order_id" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_order_id" selected="True" rename="Right_order_id" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Join Integrated Data with Payment Summary</Name>
+              <DefaultAnnotationText>Join Integrated Data with Payment Summary</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="929" y="52" width="632" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2. Feature Engineering and Business Calculated 2. Feature Engineering and Business Calculated Fields</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>2. Feature Engineering and Business Calculated 2. Feature Engineering and Business Calculated Fields</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="954" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([order_purchase_timestamp], &quot;%Y-%m&quot;)" field="Order_Year_Month" size="10" type="V_String" enabled="true" />
+                <FormulaField expression="ToNumber(DateTimeFormat([order_purchase_timestamp], &quot;%Y&quot;))" field="Order_Year" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="ToNumber(DateTimeFormat([order_purchase_timestamp], &quot;%m&quot;))" field="Order_Month" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="IF IsNull([order_delivered_customer_date]) THEN Null()&#xA;ELSE DateTimeDiff([order_delivered_customer_date], [order_purchase_timestamp], &quot;days&quot;)&#xA;ENDIF" field="Delivery_Time_Days" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="IF IsNull([order_delivered_customer_date]) THEN Null()&#xA;ELSE DateTimeDiff([order_delivered_customer_date], [order_estimated_delivery_date], &quot;days&quot;)&#xA;ENDIF" field="Delivery_Delay_Days" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="IF [order_status] != &quot;delivered&quot; THEN &quot;Not Delivered&quot;&#xA;ELSEIF IsNull([order_delivered_customer_date]) THEN &quot;Missing Delivery Date&quot;&#xA;ELSEIF [Delivery_Delay_Days] &gt; 0 THEN &quot;Late&quot;&#xA;ELSEIF [Delivery_Delay_Days] = 0 THEN &quot;On Time&quot;&#xA;ELSE &quot;Early&quot;&#xA;ENDIF" field="Delivery_Status" size="30" type="V_String" enabled="true" />
+                <FormulaField expression="IF [Total_Payment_Value] &lt; 50 THEN &quot;Low Value&quot;&#xA;ELSEIF [Total_Payment_Value] &lt; 150 THEN &quot;Medium Value&quot;&#xA;ELSE &quot;High Value&quot;&#xA;ENDIF" field="Order_Value_Category" size="30" type="V_String" enabled="true" />
+                <FormulaField expression="IF [order_status] = &quot;delivered&quot; THEN 1 ELSE 0 ENDIF" field="Is_Delivered" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="IF [Delivery_Status] = &quot;Late&quot; THEN 1 ELSE 0 ENDIF" field="Is_Late" size="2" type="Int16" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Create Business Calculated Fields</Name>
+              <AnnotationText><![CDATA[
+]]></AnnotationText>
+              <DefaultAnnotationText>Order_Year_Month = DateTimeFormat([order_purchase_timestamp], "%Y-%m")
+Order_Yea...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1050" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_167511e519a54b6bbbded036490f4f3e_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1062" y="210" width="285" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>3. Data Quality Checks and Validation</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>3. Data Quality Checks and Validation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1086" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>IsNull([order_delivered_customer_date])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Check Missing Delivery Dates</Name>
+              <DefaultAnnotationText>Check Missing Delivery Dates</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1086" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Delivery_Time_Days] &lt; 0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Check Invalid Delivery Time</Name>
+              <DefaultAnnotationText>Check Invalid Delivery Time</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1170" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_8e953d23f1da4410bd1096de37a23866_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1170" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_dfb625914e57468ab8ac301511ea1409_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1242" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Delivery_Status] = "Late"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Check Late Deliveries</Name>
+              <AnnotationText>[Delivery_Status] = "Late"</AnnotationText>
+              <DefaultAnnotationText>Check Late Deliveries</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1242" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>IsNull([Total_Payment_Value])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Check Missing Payment Values</Name>
+              <AnnotationText>IsNull([Total_Payment_Value])</AnnotationText>
+              <DefaultAnnotationText>Check Missing Payment Values</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1326" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_b0faafd81640420e9d1b3074a1f2b287_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1326" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_c144e5cccf4644cba7d3e70f225d96c3_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1061" y="281" width="268" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>4. Final Field Selection and Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>4. Final Field Selection and Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1086" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="order_status" selected="True" rename="Order_Status" />
+                <SelectField field="order_purchase_timestamp" selected="True" rename="Order_Purchase_Date" />
+                <SelectField field="order_approved_at" selected="True" rename="Order_Approved_Date" />
+                <SelectField field="order_delivered_carrier_date" selected="True" rename="Delivered_Carrier_Date" />
+                <SelectField field="order_delivered_customer_date" selected="True" rename="Delivered_Customer_Date" />
+                <SelectField field="order_estimated_delivery_date" selected="True" rename="Estimated_Delivery_Date" />
+                <SelectField field="Right_customer_id" selected="False" />
+                <SelectField field="customer_zip_code_prefix" selected="True" rename="Customer_Zip_Code" />
+                <SelectField field="customer_city_clean" selected="True" rename="Customer_City" />
+                <SelectField field="customer_state_clean" selected="True" rename="Customer_State" />
+                <SelectField field="Right_order_id" selected="False" />
+                <SelectField field="Total_Payment_Value" selected="True" rename="Revenue" />
+                <SelectField field="Primary_Payment_Type" selected="True" rename="Payment_Type" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Select Final BI Fields</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1182" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Business Intelligence\Project\BI_Project_Olist\03_output_data\olist_final_bi_dataset.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+                <SuppressBlankFile>False</SuppressBlankFile>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Export Final BI Dataset</Name>
+              <DefaultAnnotationText>olist_final_bi_dataset.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1182" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_33032_dc83aac30b2f43f1aa53bcfdeae87276_\Engine_41044_8387b3997aa74292bdbbb0ec4118b1cc_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output26" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output26" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>olist_bi_workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="dc766d76-193d-47f2-a9b5-de9ea5de9385" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="dc766d76-193d-47f2-a9b5-de9ea5de9385" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
