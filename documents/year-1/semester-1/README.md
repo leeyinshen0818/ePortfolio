@@ -22,4 +22,6 @@ This semester was my first major step into computer science. Learning programmin
 
 I also learned that computer science is not limited to writing code. Digital systems, information technology, teamwork, research, and user needs are equally important. Completing the semester gave me greater confidence in learning unfamiliar technical topics and provided a strong foundation for later programming and data-engineering subjects.
 
+Another important lesson was learning how to manage coursework that required different outputs, including programs, reports, posters, and presentations. I gradually improved my time management and became more comfortable asking questions, reviewing feedback, and correcting my work. These habits supported my transition into university-level technical learning.
+
 [← Back to Year 1](../README.md)

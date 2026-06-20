@@ -22,4 +22,6 @@ This semester improved my ability to evaluate a technical problem from several p
 
 The coursework also required more independent investigation than earlier semesters. I faced challenges when selecting appropriate technical approaches and organising evidence from multiple project components. These experiences improved my research, documentation, and decision-making skills while preparing me for more advanced data-engineering and application-development work.
 
+I also learned to compare alternative solutions instead of immediately choosing the first workable approach. Whether selecting a database model, examining an AI method, or preparing an enterprise design, I needed to justify decisions using the problem context. This made my work more structured and strengthened my confidence in handling open-ended tasks.
+
 [← Back to Year 3](../README.md)

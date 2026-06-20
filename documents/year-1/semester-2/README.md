@@ -23,4 +23,6 @@ This semester showed me that a successful system depends on more than working co
 
 At the same time, the design-related subjects helped me become more aware of the people who use a system. I learned to consider usability and requirements earlier instead of treating them as final additions. Overall, the semester strengthened my programming ability and gave me a more complete view of the system-development process.
 
+Working on larger assignments also required me to organise my code, diagrams, and written evidence more carefully. I became more confident in explaining design decisions and connecting technical implementation with project requirements. This experience prepared me to approach later software projects with better planning and a stronger awareness of quality.
+
 [← Back to Year 1](../README.md)

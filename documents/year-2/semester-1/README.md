@@ -24,4 +24,6 @@ This semester showed me how different technical areas work together in a complet
 
 Managing several technical assignments also required better planning and teamwork. Troubleshooting SQL, code, or network configurations taught me to identify problems systematically and document changes clearly. The semester improved both my technical confidence and my ability to contribute to more complex group projects.
 
+I also became more aware of the importance of consistency between requirements, design, implementation, and testing. When one part was unclear, it affected the rest of the project. This encouraged me to communicate more actively with teammates, maintain clearer records, and verify my work before considering a task complete.
+
 [← Back to Year 2](../README.md)

@@ -23,4 +23,6 @@ This semester brings together software development and data engineering in a mor
 
 The main challenge is managing the complexity of systems that contain many components, users, datasets, and processing stages. I have become more careful about project structure, data quality, testing, performance, and documentation. The semester is helping me develop a more practical understanding of how data engineering supports real applications and business decisions.
 
+Working across Flutter, Firebase, Power BI, Alteryx, Python, Spark, Azure, DuckDB, and dbt has required continuous learning. I am becoming more comfortable reading documentation, testing unfamiliar tools, and evaluating whether an approach is suitable for the task. These experiences are helping me build a more adaptable and professional technical workflow.
+
 [← Back to Year 3](../README.md)

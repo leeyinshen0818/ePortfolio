@@ -23,4 +23,6 @@ This semester strengthened my ability to work with datasets and explain analytic
 
 The programming work also improved my software-design skills by requiring clearer class structures, reusable components, and systematic testing. Some tasks were challenging because they combined programming, statistics, and interpretation. Working through them helped me become more careful when checking data quality, selecting methods, and explaining conclusions.
 
+This semester also helped me see a clearer connection between software development and data work. Programming made it possible to automate analysis, while analytical thinking gave the programs a meaningful purpose. I became more confident using unfamiliar libraries and learned to support my findings with evidence instead of relying only on assumptions.
+
 [← Back to Year 2](../README.md)
