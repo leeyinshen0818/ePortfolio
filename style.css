@@ -1137,18 +1137,35 @@ h2 {
     padding: 100px 0 54px;
   }
 
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .hero h1 {
     width: max-content;
     max-width: 100%;
+    margin-inline: auto;
     white-space: nowrap;
     font-size: clamp(2.65rem, 12.5vw, 3.4rem);
     line-height: 1;
     letter-spacing: -0.07em;
   }
 
+  .hero-title {
+    width: 100%;
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .hero-actions {
     width: min(100%, 340px);
     max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -1163,7 +1180,7 @@ h2 {
 
   .text-link {
     width: max-content;
-    margin: 8px 0 0;
+    margin: 8px auto 0;
   }
 
   .hero-highlights div {
@@ -1174,6 +1191,8 @@ h2 {
   .hero-highlights {
     width: min(100%, 340px);
     max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero-highlights div {
