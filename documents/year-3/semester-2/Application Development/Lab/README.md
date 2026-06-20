@@ -21,7 +21,6 @@ This lab contains a Flutter Daily Activities Recorder application and the suppor
 ## Folder Contents / Evidence
 
 - [Individual lab report](<Lab1_LEE YIN SHEN.pdf>)
-- [Flutter application](lab1_recorder_app)
 - [Application source code](lab1_recorder_app/lib/main.dart)
 - [Assignment document](<lab1_recorder_app/Lab Assignment 1.pdf>)
 - [Flutter dependencies](lab1_recorder_app/pubspec.yaml)
