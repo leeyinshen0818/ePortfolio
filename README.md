@@ -41,9 +41,12 @@ It contains:
 | Activity              | Description                                                     | Evidence                                                                                                            |
 | --------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Academic Writing      | Academic writing assignment                                     | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Assign 1 Academic Writting/README.md>) |
-| Apache Spark Tutorial | Spark concepts and management case study                        | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Apache/README.md>)            |
+| Azure Tutorial        | Bronze, silver, and gold data processing with Power BI evidence | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>)           |
+| Apache Spark Tutorial | Spark concepts and management case study                        | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 2 Apache Spark/README.md>)    |
+| AI Algorithm Tutorial | ANN and CNN image classification using CIFAR-10                  | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 3 AI Algorithm/README.md>)    |
+| AI Data Pipeline      | Python, DuckDB, dbt, and analytical pipeline outputs             | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 4 AI in  Data Pipeline/README.md>) |
 | Article Tutorial      | Article review and tutorial submission                          | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Article/README.md>)           |
-| Azure Tutorial        | Bronze, silver, and gold data processing with Power BI evidence | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Azure/README.md>)             |
+| Individual Project   | Reserved folder for individual project evidence                 | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Individual Project/README.md>)         |
 
 ## Featured Projects
 
@@ -51,7 +54,7 @@ It contains:
 
 A cloud data workflow using Azure storage, PySpark, Parquet, Delta tables, bronze/silver/gold layers, and Power BI.
 
-[View project](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Azure/README.md>)
+[View project](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>)
 
 ### CO2 Emissions from Cars
 
@@ -107,7 +110,7 @@ The repository is organised by year, semester, and subject. Each meaningful assi
 | Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development  | [Open folder](documents/year-2/semester-1)                                     |
 | Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System       | [Open folder](documents/year-2/semester-2)                                     |
 | Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems                | [Open folder](documents/year-3/semester-1)                                     |
-| Year 3, Semester 2 | Special Topic in Data Engineering                                                | [Open folder](<documents/year-3/semester-2/Special Topic in Data Engineering>) |
+| Year 3, Semester 2 | Application Development, Business Intelligence, High-Performance Data Processing, Special Topic in Data Engineering | [Open folder](documents/year-3/semester-2) |
 
 ## Skills and Technologies
 
