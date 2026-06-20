@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_car_sales
+    description: Cleaned and typed car sales records loaded from raw_car_sales.
+    columns:
+      - name: sale_date
+        tests:
+          - not_null
+      - name: salesperson
+        tests:
+          - not_null
+      - name: car_make
+        tests:
+          - not_null
+      - name: car_model
+        tests:
+          - not_null
+      - name: sale_price
+        tests:
+          - not_null
+      - name: commission_rate
+        tests:
+          - not_null

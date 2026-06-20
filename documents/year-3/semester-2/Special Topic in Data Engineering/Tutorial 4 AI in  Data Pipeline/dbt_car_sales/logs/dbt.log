@@ -1,0 +1,646 @@
+[0m23:57:40.394186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20E092570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20DAB1280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20DAB0A40>]}
+
+
+============================== 23:57:40.398493 | a18850b3-949c-479d-b422-30c08758f9f0 ==============================
+[0m23:57:40.398493 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:57:40.399493 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Users\\Nitro\\Documents\\STUDY\\YEAR 3\\SEM2\\Special Topic\\Tutorial 4 Claude to Pipeline\\AI_Car_Sales_DuckDB_Pipeline\\dbt_car_sales\\logs'}
+[0m23:57:40.679381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20FC25040>]}
+[0m23:57:40.744532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20E5F5EB0>]}
+[0m23:57:40.747537 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:57:40.923468 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:57:40.924471 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:57:40.924471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20FDDD2B0>]}
+[0m23:57:43.843518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C210401EE0>]}
+[0m23:57:43.901330 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Special Topic\Tutorial 4 Claude to Pipeline\AI_Car_Sales_DuckDB_Pipeline\dbt_car_sales\target\manifest.json
+[0m23:57:43.903115 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Special Topic\Tutorial 4 Claude to Pipeline\AI_Car_Sales_DuckDB_Pipeline\dbt_car_sales\target\semantic_manifest.json
+[0m23:57:43.917334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C21046D100>]}
+[0m23:57:43.918323 [info ] [MainThread]: Found 6 models, 17 data tests, 485 macros
+[0m23:57:43.918323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C210276990>]}
+[0m23:57:43.920319 [info ] [MainThread]: 
+[0m23:57:43.920319 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:57:43.921318 [info ] [MainThread]: 
+[0m23:57:43.921318 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:57:43.925335 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_car_sales'
+[0m23:57:46.763452 [debug] [ThreadPool]: Using duckdb connection "list_car_sales"
+[0m23:57:46.764471 [debug] [ThreadPool]: On list_car_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "connection_name": "list_car_sales"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"car_sales"'
+    
+  
+  
+[0m23:57:46.764471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:57:46.796097 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m23:57:46.798151 [debug] [ThreadPool]: On list_car_sales: Close
+[0m23:57:46.799171 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_car_sales, now create_car_sales_main)
+[0m23:57:46.800163 [debug] [ThreadPool]: Creating schema "database: "car_sales"
+schema: "main"
+"
+[0m23:57:46.804170 [debug] [ThreadPool]: Using duckdb connection "create_car_sales_main"
+[0m23:57:46.805155 [debug] [ThreadPool]: On create_car_sales_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "connection_name": "create_car_sales_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='car_sales'
+        and type='sqlite'
+    
+  
+[0m23:57:46.805155 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:57:46.806478 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:57:46.807483 [debug] [ThreadPool]: Using duckdb connection "create_car_sales_main"
+[0m23:57:46.807483 [debug] [ThreadPool]: On create_car_sales_main: BEGIN
+[0m23:57:46.808481 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:57:46.808481 [debug] [ThreadPool]: Using duckdb connection "create_car_sales_main"
+[0m23:57:46.809482 [debug] [ThreadPool]: On create_car_sales_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "connection_name": "create_car_sales_main"} */
+
+    
+    
+        create schema if not exists "car_sales"."main"
+    
+[0m23:57:46.810482 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:57:46.811525 [debug] [ThreadPool]: On create_car_sales_main: COMMIT
+[0m23:57:46.811525 [debug] [ThreadPool]: Using duckdb connection "create_car_sales_main"
+[0m23:57:46.811525 [debug] [ThreadPool]: On create_car_sales_main: COMMIT
+[0m23:57:46.812539 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:57:46.812539 [debug] [ThreadPool]: On create_car_sales_main: Close
+[0m23:57:46.814540 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_car_sales_main'
+[0m23:57:46.818554 [debug] [ThreadPool]: Using duckdb connection "list_car_sales_main"
+[0m23:57:46.818554 [debug] [ThreadPool]: On list_car_sales_main: BEGIN
+[0m23:57:46.818554 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:57:46.819539 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:57:46.819539 [debug] [ThreadPool]: Using duckdb connection "list_car_sales_main"
+[0m23:57:46.820538 [debug] [ThreadPool]: On list_car_sales_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "connection_name": "list_car_sales_main"} */
+select
+      'car_sales' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'car_sales'
+  
+[0m23:57:46.825589 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m23:57:46.827557 [debug] [ThreadPool]: On list_car_sales_main: ROLLBACK
+[0m23:57:46.828556 [debug] [ThreadPool]: Failed to rollback 'list_car_sales_main'
+[0m23:57:46.829882 [debug] [ThreadPool]: On list_car_sales_main: Close
+[0m23:57:46.830888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20B83B350>]}
+[0m23:57:46.831888 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:46.831888 [debug] [MainThread]: On master: BEGIN
+[0m23:57:46.832888 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:57:46.832888 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:57:46.833887 [debug] [MainThread]: On master: COMMIT
+[0m23:57:46.833887 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:46.833887 [debug] [MainThread]: On master: COMMIT
+[0m23:57:46.834886 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:57:46.834886 [debug] [MainThread]: On master: Close
+[0m23:57:46.839336 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.stg_car_sales
+[0m23:57:46.840338 [info ] [Thread-1 (]: 1 of 6 START sql table model main.stg_car_sales ................................ [RUN]
+[0m23:57:46.840338 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.car_sales_dbt.stg_car_sales'
+[0m23:57:46.841337 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.stg_car_sales
+[0m23:57:46.846337 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.stg_car_sales"
+[0m23:57:46.848336 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.stg_car_sales
+[0m23:57:46.869917 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.stg_car_sales"
+[0m23:57:46.871983 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.stg_car_sales"
+[0m23:57:46.872540 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: BEGIN
+[0m23:57:46.873107 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:57:46.874257 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:46.874777 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.stg_car_sales"
+[0m23:57:46.874777 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.stg_car_sales"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."stg_car_sales__dbt_tmp"
+  
+    as (
+      WITH typed AS (
+    SELECT
+        TRY_CAST("Date" AS DATE) AS sale_date,
+        REGEXP_REPLACE(TRIM(CAST("Salesperson" AS VARCHAR)), '\s+', ' ', 'g') AS salesperson,
+        REGEXP_REPLACE(TRIM(CAST("Customer Name" AS VARCHAR)), '\s+', ' ', 'g') AS customer_name,
+        REGEXP_REPLACE(TRIM(CAST("Car Make" AS VARCHAR)), '\s+', ' ', 'g') AS car_make,
+        REGEXP_REPLACE(TRIM(CAST("Car Model" AS VARCHAR)), '\s+', ' ', 'g') AS car_model,
+        TRY_CAST("Car Year" AS INTEGER) AS car_year,
+        TRY_CAST(REGEXP_REPLACE(CAST("Sale Price" AS VARCHAR), '[^0-9.-]', '', 'g') AS DOUBLE) AS sale_price,
+        TRY_CAST(REGEXP_REPLACE(CAST("Commission Rate" AS VARCHAR), '[^0-9.-]', '', 'g') AS DOUBLE) AS commission_rate,
+        TRY_CAST(REGEXP_REPLACE(CAST("Commission Earned" AS VARCHAR), '[^0-9.-]', '', 'g') AS DOUBLE) AS commission_earned
+    FROM raw_car_sales
+)
+
+SELECT
+    sale_date,
+    salesperson,
+    customer_name,
+    car_make,
+    car_model,
+    car_year,
+    sale_price,
+    commission_rate,
+    commission_earned,
+    ROUND(sale_price * commission_rate, 2) AS calculated_commission,
+    ROUND(commission_earned - ROUND(sale_price * commission_rate, 2), 2) AS commission_difference,
+    EXTRACT(YEAR FROM sale_date)::INTEGER AS year,
+    EXTRACT(MONTH FROM sale_date)::INTEGER AS month,
+    EXTRACT(QUARTER FROM sale_date)::INTEGER AS quarter,
+    STRFTIME(sale_date, '%Y-%m') AS year_month
+FROM typed
+WHERE sale_date IS NOT NULL
+  AND sale_price > 0
+  AND commission_rate BETWEEN 0 AND 1
+    );
+  
+  
+[0m23:57:46.993595 [debug] [Thread-1 (]: SQL status: OK in 0.118 seconds
+[0m23:57:46.997597 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.stg_car_sales"
+[0m23:57:46.998597 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.stg_car_sales"} */
+alter table "car_sales"."main"."stg_car_sales__dbt_tmp" rename to "stg_car_sales"
+[0m23:57:46.999597 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.010677 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: COMMIT
+[0m23:57:47.011677 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.stg_car_sales"
+[0m23:57:47.011677 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: COMMIT
+[0m23:57:47.024662 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m23:57:47.028663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.stg_car_sales"
+[0m23:57:47.029666 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.stg_car_sales"} */
+
+      drop table if exists "car_sales"."main"."stg_car_sales__dbt_backup" cascade
+    
+[0m23:57:47.029666 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.031664 [debug] [Thread-1 (]: On model.car_sales_dbt.stg_car_sales: Close
+[0m23:57:47.033664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C20B75EC60>]}
+[0m23:57:47.034664 [info ] [Thread-1 (]: 1 of 6 OK created sql table model main.stg_car_sales ........................... [[32mOK[0m in 0.19s]
+[0m23:57:47.035663 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.stg_car_sales
+[0m23:57:47.036663 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.car_make_summary
+[0m23:57:47.036663 [info ] [Thread-1 (]: 2 of 6 START sql table model main.car_make_summary ............................. [RUN]
+[0m23:57:47.037664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.car_sales_dbt.stg_car_sales, now model.car_sales_dbt.car_make_summary)
+[0m23:57:47.037664 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.car_make_summary
+[0m23:57:47.039664 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.040719 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.car_make_summary
+[0m23:57:47.042764 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.044664 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.044664 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: BEGIN
+[0m23:57:47.044664 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:47.045664 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.045664 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.046664 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."car_make_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    car_make,
+    COUNT(*) AS transaction_count,
+    ROUND(SUM(sale_price), 2) AS total_sales,
+    ROUND(AVG(sale_price), 2) AS average_sale_price,
+    ROUND(SUM(commission_earned), 2) AS total_commission,
+    MIN(car_year) AS oldest_car_year,
+    MAX(car_year) AS newest_car_year
+FROM "car_sales"."main"."stg_car_sales"
+GROUP BY car_make
+ORDER BY total_sales DESC
+    );
+  
+  
+[0m23:57:47.056663 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m23:57:47.060677 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.061684 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'car_make_summary'
+  
+[0m23:57:47.062684 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.063706 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.063706 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'car_make_summary'
+  
+[0m23:57:47.065663 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.068663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.068663 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+alter table "car_sales"."main"."car_make_summary" rename to "car_make_summary__dbt_backup"
+[0m23:57:47.069664 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.071663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.071663 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+alter table "car_sales"."main"."car_make_summary__dbt_tmp" rename to "car_make_summary"
+[0m23:57:47.072663 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.074764 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: COMMIT
+[0m23:57:47.075764 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.075764 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: COMMIT
+[0m23:57:47.077663 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.079773 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_make_summary"
+[0m23:57:47.079773 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_make_summary"} */
+
+      drop table if exists "car_sales"."main"."car_make_summary__dbt_backup" cascade
+    
+[0m23:57:47.080707 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.082664 [debug] [Thread-1 (]: On model.car_sales_dbt.car_make_summary: Close
+[0m23:57:47.082664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2107B4A70>]}
+[0m23:57:47.083663 [info ] [Thread-1 (]: 2 of 6 OK created sql table model main.car_make_summary ........................ [[32mOK[0m in 0.05s]
+[0m23:57:47.083663 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.car_make_summary
+[0m23:57:47.084664 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.car_model_summary
+[0m23:57:47.084664 [info ] [Thread-1 (]: 3 of 6 START sql table model main.car_model_summary ............................ [RUN]
+[0m23:57:47.085665 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.car_sales_dbt.car_make_summary, now model.car_sales_dbt.car_model_summary)
+[0m23:57:47.085665 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.car_model_summary
+[0m23:57:47.087663 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.088664 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.car_model_summary
+[0m23:57:47.090663 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.091663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.092669 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: BEGIN
+[0m23:57:47.092669 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:47.093663 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.093663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.094663 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."car_model_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    car_make,
+    car_model,
+    COUNT(*) AS transaction_count,
+    ROUND(SUM(sale_price), 2) AS total_sales,
+    ROUND(AVG(sale_price), 2) AS average_sale_price,
+    ROUND(SUM(commission_earned), 2) AS total_commission
+FROM "car_sales"."main"."stg_car_sales"
+GROUP BY car_make, car_model
+ORDER BY total_sales DESC
+    );
+  
+  
+[0m23:57:47.100667 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m23:57:47.102663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.102663 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'car_model_summary'
+  
+[0m23:57:47.103663 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.105677 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.105677 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'car_model_summary'
+  
+[0m23:57:47.106661 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.108663 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.109662 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+alter table "car_sales"."main"."car_model_summary" rename to "car_model_summary__dbt_backup"
+[0m23:57:47.110663 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.113661 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.113661 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+alter table "car_sales"."main"."car_model_summary__dbt_tmp" rename to "car_model_summary"
+[0m23:57:47.114661 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.117694 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: COMMIT
+[0m23:57:47.117694 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.118662 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: COMMIT
+[0m23:57:47.119591 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.120597 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.car_model_summary"
+[0m23:57:47.121597 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.car_model_summary"} */
+
+      drop table if exists "car_sales"."main"."car_model_summary__dbt_backup" cascade
+    
+[0m23:57:47.122596 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.123596 [debug] [Thread-1 (]: On model.car_sales_dbt.car_model_summary: Close
+[0m23:57:47.124594 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2118F0C20>]}
+[0m23:57:47.125595 [info ] [Thread-1 (]: 3 of 6 OK created sql table model main.car_model_summary ....................... [[32mOK[0m in 0.04s]
+[0m23:57:47.125595 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.car_model_summary
+[0m23:57:47.126594 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.data_quality_summary
+[0m23:57:47.126594 [info ] [Thread-1 (]: 4 of 6 START sql table model main.data_quality_summary ......................... [RUN]
+[0m23:57:47.127616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.car_sales_dbt.car_model_summary, now model.car_sales_dbt.data_quality_summary)
+[0m23:57:47.127616 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.data_quality_summary
+[0m23:57:47.130597 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.131596 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.data_quality_summary
+[0m23:57:47.133597 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.134588 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.134588 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: BEGIN
+[0m23:57:47.135595 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:47.136594 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.136594 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.137593 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."data_quality_summary__dbt_tmp"
+  
+    as (
+      WITH raw_typed AS (
+    SELECT
+        TRY_CAST("Date" AS DATE) AS parsed_date,
+        TRY_CAST(REGEXP_REPLACE(CAST("Sale Price" AS VARCHAR), '[^0-9.-]', '', 'g') AS DOUBLE) AS parsed_sale_price,
+        TRY_CAST(REGEXP_REPLACE(CAST("Commission Rate" AS VARCHAR), '[^0-9.-]', '', 'g') AS DOUBLE) AS parsed_commission_rate
+    FROM raw_car_sales
+),
+
+counts AS (
+    SELECT
+        (SELECT COUNT(*) FROM raw_car_sales) AS raw_row_count,
+        (SELECT COUNT(*) FROM "car_sales"."main"."stg_car_sales") AS cleaned_row_count,
+        (SELECT COUNT(*) FROM raw_car_sales)
+            - (SELECT COUNT(*) FROM (SELECT DISTINCT * FROM raw_car_sales)) AS duplicate_rows,
+        SUM(CASE WHEN parsed_date IS NULL THEN 1 ELSE 0 END) AS invalid_dates,
+        SUM(CASE WHEN parsed_sale_price IS NULL OR parsed_sale_price <= 0 THEN 1 ELSE 0 END) AS invalid_sale_price_rows,
+        SUM(CASE WHEN parsed_commission_rate IS NULL OR parsed_commission_rate < 0 OR parsed_commission_rate > 1 THEN 1 ELSE 0 END) AS invalid_commission_rate_rows
+    FROM raw_typed
+),
+
+commission_stats AS (
+    SELECT
+        MIN(commission_difference) AS commission_difference_min,
+        MAX(commission_difference) AS commission_difference_max,
+        AVG(commission_difference) AS commission_difference_mean,
+        SUM(CASE WHEN ABS(commission_difference) > 0.01 THEN 1 ELSE 0 END) AS commission_difference_non_zero_count
+    FROM "car_sales"."main"."stg_car_sales"
+)
+
+SELECT
+    counts.raw_row_count,
+    counts.cleaned_row_count,
+    counts.raw_row_count - counts.cleaned_row_count AS rows_removed,
+    counts.duplicate_rows,
+    counts.invalid_dates,
+    counts.invalid_sale_price_rows,
+    counts.invalid_commission_rate_rows,
+    ROUND(commission_stats.commission_difference_min, 4) AS commission_difference_min,
+    ROUND(commission_stats.commission_difference_max, 4) AS commission_difference_max,
+    ROUND(commission_stats.commission_difference_mean, 4) AS commission_difference_mean,
+    commission_stats.commission_difference_non_zero_count,
+    ROUND(
+        commission_stats.commission_difference_non_zero_count * 100.0
+        / NULLIF(counts.cleaned_row_count, 0),
+        2
+    ) AS commission_difference_non_zero_percentage
+FROM counts
+CROSS JOIN commission_stats
+    );
+  
+  
+[0m23:57:47.170896 [debug] [Thread-1 (]: SQL status: OK in 0.033 seconds
+[0m23:57:47.172902 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.172902 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'data_quality_summary'
+  
+[0m23:57:47.173903 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.174910 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.175913 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'data_quality_summary'
+  
+[0m23:57:47.176917 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.178911 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.179896 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+alter table "car_sales"."main"."data_quality_summary" rename to "data_quality_summary__dbt_backup"
+[0m23:57:47.179896 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.182274 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.183270 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+alter table "car_sales"."main"."data_quality_summary__dbt_tmp" rename to "data_quality_summary"
+[0m23:57:47.183270 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.185167 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: COMMIT
+[0m23:57:47.186167 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.186167 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: COMMIT
+[0m23:57:47.187166 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.189187 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.data_quality_summary"
+[0m23:57:47.190167 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.data_quality_summary"} */
+
+      drop table if exists "car_sales"."main"."data_quality_summary__dbt_backup" cascade
+    
+[0m23:57:47.191167 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.192187 [debug] [Thread-1 (]: On model.car_sales_dbt.data_quality_summary: Close
+[0m23:57:47.193169 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2118AABA0>]}
+[0m23:57:47.193169 [info ] [Thread-1 (]: 4 of 6 OK created sql table model main.data_quality_summary .................... [[32mOK[0m in 0.06s]
+[0m23:57:47.194169 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.data_quality_summary
+[0m23:57:47.195168 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.monthly_sales_summary
+[0m23:57:47.195168 [info ] [Thread-1 (]: 5 of 6 START sql table model main.monthly_sales_summary ........................ [RUN]
+[0m23:57:47.196171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.car_sales_dbt.data_quality_summary, now model.car_sales_dbt.monthly_sales_summary)
+[0m23:57:47.196171 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.monthly_sales_summary
+[0m23:57:47.198167 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.199169 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.monthly_sales_summary
+[0m23:57:47.202192 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.203166 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.203166 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: BEGIN
+[0m23:57:47.204167 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:47.204167 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.205165 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.205165 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."monthly_sales_summary__dbt_tmp"
+  
+    as (
+      WITH monthly AS (
+    SELECT
+        year_month,
+        ROUND(SUM(sale_price), 2) AS total_sales,
+        COUNT(*) AS transaction_count,
+        ROUND(AVG(sale_price), 2) AS average_sale_price,
+        ROUND(SUM(commission_earned), 2) AS total_commission
+    FROM "car_sales"."main"."stg_car_sales"
+    GROUP BY year_month
+),
+
+with_median AS (
+    SELECT
+        *,
+        MEDIAN(transaction_count) OVER () AS median_monthly_transaction_count
+    FROM monthly
+)
+
+SELECT
+    year_month,
+    total_sales,
+    transaction_count,
+    average_sale_price,
+    total_commission,
+    median_monthly_transaction_count,
+    transaction_count < median_monthly_transaction_count * 0.5 AS possible_partial_month
+FROM with_median
+ORDER BY year_month
+    );
+  
+  
+[0m23:57:47.210182 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m23:57:47.212179 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.212179 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'monthly_sales_summary'
+  
+[0m23:57:47.213170 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.215183 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.215183 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'monthly_sales_summary'
+  
+[0m23:57:47.216166 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.218181 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.219167 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+alter table "car_sales"."main"."monthly_sales_summary" rename to "monthly_sales_summary__dbt_backup"
+[0m23:57:47.219167 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.223186 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.223186 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+alter table "car_sales"."main"."monthly_sales_summary__dbt_tmp" rename to "monthly_sales_summary"
+[0m23:57:47.224166 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.226166 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: COMMIT
+[0m23:57:47.226166 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.227184 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: COMMIT
+[0m23:57:47.228166 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.229181 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.monthly_sales_summary"
+[0m23:57:47.230181 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.monthly_sales_summary"} */
+
+      drop table if exists "car_sales"."main"."monthly_sales_summary__dbt_backup" cascade
+    
+[0m23:57:47.231108 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.232115 [debug] [Thread-1 (]: On model.car_sales_dbt.monthly_sales_summary: Close
+[0m23:57:47.232115 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2118A65A0>]}
+[0m23:57:47.233114 [info ] [Thread-1 (]: 5 of 6 OK created sql table model main.monthly_sales_summary ................... [[32mOK[0m in 0.04s]
+[0m23:57:47.234114 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.monthly_sales_summary
+[0m23:57:47.234114 [debug] [Thread-1 (]: Began running node model.car_sales_dbt.salesperson_metrics
+[0m23:57:47.235149 [info ] [Thread-1 (]: 6 of 6 START sql table model main.salesperson_metrics .......................... [RUN]
+[0m23:57:47.235149 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.car_sales_dbt.monthly_sales_summary, now model.car_sales_dbt.salesperson_metrics)
+[0m23:57:47.236138 [debug] [Thread-1 (]: Began compiling node model.car_sales_dbt.salesperson_metrics
+[0m23:57:47.238127 [debug] [Thread-1 (]: Writing injected SQL for node "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.238127 [debug] [Thread-1 (]: Began executing node model.car_sales_dbt.salesperson_metrics
+[0m23:57:47.241131 [debug] [Thread-1 (]: Writing runtime sql for node "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.241880 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.241880 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: BEGIN
+[0m23:57:47.242979 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:47.242979 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.243980 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.243980 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+
+  
+    
+    
+
+    create  table
+      "car_sales"."main"."salesperson_metrics__dbt_tmp"
+  
+    as (
+      SELECT
+    salesperson,
+    COUNT(*) AS transaction_count,
+    ROUND(SUM(sale_price), 2) AS total_sales,
+    ROUND(AVG(sale_price), 2) AS average_sale_price,
+    ROUND(SUM(commission_earned), 2) AS total_commission,
+    ROUND(AVG(commission_rate), 4) AS average_commission_rate,
+    MIN(sale_date) AS first_sale_date,
+    MAX(sale_date) AS last_sale_date
+FROM "car_sales"."main"."stg_car_sales"
+GROUP BY salesperson
+ORDER BY total_sales DESC
+    );
+  
+  
+[0m23:57:47.267988 [debug] [Thread-1 (]: SQL status: OK in 0.023 seconds
+[0m23:57:47.268990 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.268990 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'salesperson_metrics'
+  
+[0m23:57:47.269990 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.270994 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.271991 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'salesperson_metrics'
+  
+[0m23:57:47.272990 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.274990 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.275989 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+alter table "car_sales"."main"."salesperson_metrics" rename to "salesperson_metrics__dbt_backup"
+[0m23:57:47.275989 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.277991 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.278989 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+alter table "car_sales"."main"."salesperson_metrics__dbt_tmp" rename to "salesperson_metrics"
+[0m23:57:47.278989 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:47.280991 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: COMMIT
+[0m23:57:47.280991 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.281989 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: COMMIT
+[0m23:57:47.285989 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m23:57:47.287988 [debug] [Thread-1 (]: Using duckdb connection "model.car_sales_dbt.salesperson_metrics"
+[0m23:57:47.288989 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "car_sales_dbt", "target_name": "dev", "node_id": "model.car_sales_dbt.salesperson_metrics"} */
+
+      drop table if exists "car_sales"."main"."salesperson_metrics__dbt_backup" cascade
+    
+[0m23:57:47.289989 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:47.290990 [debug] [Thread-1 (]: On model.car_sales_dbt.salesperson_metrics: Close
+[0m23:57:47.291990 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a18850b3-949c-479d-b422-30c08758f9f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2118A5A00>]}
+[0m23:57:47.291990 [info ] [Thread-1 (]: 6 of 6 OK created sql table model main.salesperson_metrics ..................... [[32mOK[0m in 0.06s]
+[0m23:57:47.292990 [debug] [Thread-1 (]: Finished running node model.car_sales_dbt.salesperson_metrics
+[0m23:57:47.293989 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:47.293989 [debug] [MainThread]: On master: BEGIN
+[0m23:57:47.294990 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:57:47.294990 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:57:47.295988 [debug] [MainThread]: On master: COMMIT
+[0m23:57:47.295988 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:47.295988 [debug] [MainThread]: On master: COMMIT
+[0m23:57:47.296987 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:57:47.296987 [debug] [MainThread]: On master: Close
+[0m23:57:47.297994 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:57:47.297994 [debug] [MainThread]: Connection 'create_car_sales_main' was properly closed.
+[0m23:57:47.298993 [debug] [MainThread]: Connection 'list_car_sales_main' was properly closed.
+[0m23:57:47.298993 [debug] [MainThread]: Connection 'model.car_sales_dbt.salesperson_metrics' was properly closed.
+[0m23:57:47.298993 [info ] [MainThread]: 
+[0m23:57:47.299992 [info ] [MainThread]: Finished running 6 table models in 0 hours 0 minutes and 3.38 seconds (3.38s).
+[0m23:57:47.300993 [debug] [MainThread]: Command end result
+[0m23:57:47.383148 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Special Topic\Tutorial 4 Claude to Pipeline\AI_Car_Sales_DuckDB_Pipeline\dbt_car_sales\target\manifest.json
+[0m23:57:47.386146 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Special Topic\Tutorial 4 Claude to Pipeline\AI_Car_Sales_DuckDB_Pipeline\dbt_car_sales\target\semantic_manifest.json
+[0m23:57:47.393146 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Users\Nitro\Documents\STUDY\YEAR 3\SEM2\Special Topic\Tutorial 4 Claude to Pipeline\AI_Car_Sales_DuckDB_Pipeline\dbt_car_sales\target\run_results.json
+[0m23:57:47.394147 [info ] [MainThread]: 
+[0m23:57:47.395151 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:57:47.395151 [info ] [MainThread]: 
+[0m23:57:47.396149 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m23:57:47.396149 [debug] [MainThread]: Command `dbt run` succeeded at 23:57:47.396149 after 7.24 seconds
+[0m23:57:47.397150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2104AFA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2104ADE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C2104AF5C0>]}
+[0m23:57:47.397150 [debug] [MainThread]: Flushing usage events
+[0m23:57:48.914523 [debug] [MainThread]: An error was encountered while trying to flush usage events

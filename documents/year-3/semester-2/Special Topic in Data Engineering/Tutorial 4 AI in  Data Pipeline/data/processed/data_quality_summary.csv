@@ -1,0 +1,2 @@
+raw_row_count,cleaned_row_count,rows_removed,duplicate_rows,invalid_dates,invalid_sale_price_rows,invalid_commission_rate_rows,commission_difference_min,commission_difference_max,commission_difference_mean,commission_difference_non_zero_count,commission_difference_non_zero_percentage
+50000,50000,0,0,0,0,0,0.0,0.0,0.0,0,0.0

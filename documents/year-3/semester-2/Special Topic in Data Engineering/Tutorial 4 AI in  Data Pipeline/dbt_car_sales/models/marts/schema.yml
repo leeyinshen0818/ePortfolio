@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: data_quality_summary
+    description: One-row summary of row counts, invalid rows, duplicates, and commission checks.
+    columns:
+      - name: raw_row_count
+        tests:
+          - not_null
+      - name: cleaned_row_count
+        tests:
+          - not_null
+
+  - name: salesperson_metrics
+    description: Sales performance metrics grouped by salesperson.
+    columns:
+      - name: salesperson
+        tests:
+          - not_null
+      - name: transaction_count
+        tests:
+          - not_null
+
+  - name: car_make_summary
+    description: Sales performance metrics grouped by car make.
+    columns:
+      - name: car_make
+        tests:
+          - not_null
+      - name: transaction_count
+        tests:
+          - not_null
+
+  - name: car_model_summary
+    description: Sales performance metrics grouped by car make and model.
+    columns:
+      - name: car_make
+        tests:
+          - not_null
+      - name: car_model
+        tests:
+          - not_null
+      - name: transaction_count
+        tests:
+          - not_null
+
+  - name: monthly_sales_summary
+    description: Monthly sales trend metrics with possible partial month flag.
+    columns:
+      - name: year_month
+        tests:
+          - not_null
+      - name: transaction_count
+        tests:
+          - not_null

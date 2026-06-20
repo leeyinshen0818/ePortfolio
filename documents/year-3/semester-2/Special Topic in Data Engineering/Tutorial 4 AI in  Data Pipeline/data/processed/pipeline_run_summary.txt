@@ -1,0 +1,67 @@
+AI Car Sales DuckDB + dbt Pipeline Run Summary
+
+Run timestamp: 2026-06-12 23:57:50
+Status: SUCCESS
+
+Input and warehouse:
+- Input CSV path: data\raw\car_sales_data.csv
+- DuckDB database path: warehouse\car_sales.duckdb
+- dbt project path: dbt_car_sales
+- Full dataset row count: 2,500,000
+- USE_SAMPLE: True
+- Sample size used: 50,000
+- Random state: 42
+
+Row counts:
+- Cleaned row count: 50,000
+- Rows removed: 0
+- Duplicate rows in sample: 0
+
+Invalid row summary:
+- Invalid dates: 0
+- Invalid sale price rows: 0
+- Invalid commission rate rows: 0
+
+Commission difference summary:
+- Minimum difference: 0.0
+- Maximum difference: 0.0
+- Mean difference: 0.0
+- Non-zero difference count: 0
+- Non-zero difference percentage: 0.0%
+
+Business metrics:
+- Total sales revenue: 1500557536.0
+- Total commission earned: 150027890.14
+- Date range: 2022-05-01 00:00:00 to 2023-05-01 00:00:00
+- Unique salespeople: 40,286
+- Unique car makes: 5
+- Unique car models: 5
+
+Generated DuckDB tables:
+- raw_car_sales
+- stg_car_sales
+- data_quality_summary
+- salesperson_metrics
+- car_make_summary
+- car_model_summary
+- monthly_sales_summary
+
+Generated CSV files:
+- data\processed\cleaned_car_sales.csv
+- data\processed\data_quality_summary.csv
+- data\processed\salesperson_metrics.csv
+- data\processed\car_make_summary.csv
+- data\processed\car_model_summary.csv
+- data\processed\monthly_sales_summary.csv
+
+Generated chart files:
+- charts\sales_by_salesperson.png
+- charts\sales_by_car_make.png
+- charts\monthly_sales_trend.png
+- charts\commission_rate_distribution.png
+
+Notes:
+- dbt handles the SQL transformation layer after Python loads raw_car_sales.
+- Possible partial months are flagged when a monthly transaction count is less than 50% of the median monthly transaction count.
+- Possible partial month count: 1
+- Similar sales totals by car make may suggest synthetic, randomized, or intentionally balanced data.
