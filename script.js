@@ -99,10 +99,9 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
 
   revealLinkedSection();
   window.addEventListener("load", revealLinkedSection);
-  window.addEventListener("hashchange", revealLinkedSection);
 
   const sectionObserver = new IntersectionObserver(
-    (entries, observer) => {
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
@@ -110,22 +109,23 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
             () => entry.target.style.removeProperty("--reveal-delay"),
             1200
           );
-          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.remove("is-visible");
         }
       });
     },
     {
-      threshold: window.innerWidth > 900 ? 0.2 : 0.12,
+      threshold: 0.05,
       rootMargin: window.innerWidth > 900
-        ? "0px 0px -18% 0px"
-        : "0px 0px -8% 0px",
+        ? "-8% 0px -16% 0px"
+        : "-5% 0px -10% 0px",
     }
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
 
   const itemObserver = new IntersectionObserver(
-    (entries, observer) => {
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
@@ -133,15 +133,16 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
             () => entry.target.style.removeProperty("--reveal-delay"),
             1200
           );
-          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.remove("is-visible");
         }
       });
     },
     {
-      threshold: window.innerWidth > 900 ? 0.22 : 0.14,
+      threshold: 0.08,
       rootMargin: window.innerWidth > 900
-        ? "0px 0px -14% 0px"
-        : "0px 0px -5% 0px",
+        ? "-5% 0px -12% 0px"
+        : "-3% 0px -8% 0px",
     }
   );
 
