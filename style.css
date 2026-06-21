@@ -819,19 +819,40 @@ h2 {
     linear-gradient(115deg, #dbeafe, #ffffff 58%);
 }
 
+.hero-reveal,
 .reveal,
 .reveal-item {
   opacity: 0;
   transform: translateY(28px);
+  filter: blur(5px);
   transition:
-    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 800ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 800ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
 }
 
+.hero.is-visible .hero-reveal,
 .reveal.is-visible,
 .reveal-item.is-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
+}
+
+.hero-reveal.portrait-wrap {
+  transform: translateY(22px) scale(0.96);
+}
+
+.hero.is-visible .hero-reveal.portrait-wrap {
+  transform: translateY(0) scale(1);
+}
+
+@media (min-width: 901px) {
+  .reveal,
+  .reveal-item {
+    transform: translateY(38px);
+  }
 }
 
 .callout-card h2 {
@@ -1289,9 +1310,12 @@ h2 {
     animation-iteration-count: 1 !important;
   }
 
+  .hero-reveal,
+  .hero-reveal.portrait-wrap,
   .reveal,
   .reveal-item {
     opacity: 1;
     transform: none;
+    filter: none;
   }
 }

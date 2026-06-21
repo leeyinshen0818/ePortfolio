@@ -7,6 +7,9 @@ const sections = document.querySelectorAll(".section");
 const revealItems = document.querySelectorAll(
   ".experience-card, .project-card, .skill-group, .credential-list article, .achievement-list article, .about-education, .callout-card"
 );
+const heroItems = document.querySelectorAll(
+  ".hero .eyebrow, .hero h1, .hero-title, .hero-intro, .hero-actions, .hero-highlights, .portrait-wrap"
+);
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (year) {
@@ -68,8 +71,25 @@ if ("IntersectionObserver" in window && trackedSections.length) {
 }
 
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
+  heroItems.forEach((item, index) => {
+    item.classList.add("hero-reveal");
+    item.style.setProperty("--reveal-delay", `${90 + index * 90}ms`);
+  });
+
   sections.forEach((section) => section.classList.add("reveal"));
-  revealItems.forEach((item) => item.classList.add("reveal-item"));
+  revealItems.forEach((item, index) => {
+    item.classList.add("reveal-item");
+    item.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelector(".hero")?.classList.add("is-visible");
+      window.setTimeout(() => {
+        heroItems.forEach((item) => item.style.removeProperty("--reveal-delay"));
+      }, 1500);
+    });
+  });
 
   const revealLinkedSection = () => {
     if (window.location.hash) {
@@ -86,13 +106,19 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
+          window.setTimeout(
+            () => entry.target.style.removeProperty("--reveal-delay"),
+            1200
+          );
           observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.12,
-      rootMargin: "0px 0px -8% 0px",
+      threshold: window.innerWidth > 900 ? 0.2 : 0.12,
+      rootMargin: window.innerWidth > 900
+        ? "0px 0px -18% 0px"
+        : "0px 0px -8% 0px",
     }
   );
 
@@ -103,13 +129,19 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
+          window.setTimeout(
+            () => entry.target.style.removeProperty("--reveal-delay"),
+            1200
+          );
           observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.14,
-      rootMargin: "0px 0px -5% 0px",
+      threshold: window.innerWidth > 900 ? 0.22 : 0.14,
+      rootMargin: window.innerWidth > 900
+        ? "0px 0px -14% 0px"
+        : "0px 0px -5% 0px",
     }
   );
 
