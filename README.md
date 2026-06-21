@@ -13,6 +13,7 @@ It presents my academic progress from foundational programming and computer syst
 | **Name** | Lee Yin Shen |
 | **Programme** | Bachelor of Computer Science (Data Engineering) |
 | **University** | Universiti Teknologi Malaysia |
+| **Portfolio Website** | [leeyinshen0818.github.io/ePortfolio](https://leeyinshen0818.github.io/ePortfolio/) |
 | **GitHub** | [leeyinshen0818](https://github.com/leeyinshen0818) |
 | **LinkedIn** | [Lee Yin Shen](https://www.linkedin.com/in/lee-yin-shen-86ba87297/) |
 
@@ -172,6 +173,7 @@ This portfolio records my progress rather than claiming expert-level knowledge. 
 
 ## 🔗 Profiles and Contact
 
+- [Portfolio Website](https://leeyinshen0818.github.io/ePortfolio/)
 - [GitHub Profile](https://github.com/leeyinshen0818)
 - [E-Portfolio Repository](https://github.com/leeyinshen0818/ePortfolio)
 - [LinkedIn Profile](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
