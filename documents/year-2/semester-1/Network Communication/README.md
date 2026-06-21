@@ -23,6 +23,8 @@ Network Communication covered networking concepts through laboratory exercises a
 
 ## Reflection
 
-The practical exercises improved my understanding of how devices communicate across a network. Troubleshooting connectivity also taught me to check configurations systematically instead of changing several settings at once.
+Network Communication helped me understand how devices and systems exchange information. Through laboratory exercises and the multi-stage network project, I worked with topology design, addressing, configuration, connectivity testing, and documentation. The subject connected theoretical networking concepts with a simulated environment where design choices could be tested.
 
-[← Back to Semester 1](../README.md)
+Troubleshooting was one of the most valuable and challenging parts of the subject. When communication failed, I needed to determine whether the cause was the physical design, addressing plan, device configuration, or another dependency. Checking the network layer by layer taught me to diagnose problems systematically and record configuration details accurately.
+
+The subject improved my understanding of the infrastructure that supports modern applications and data systems. Cloud services, distributed processing, databases, and web applications all depend on reliable communication. This knowledge helps me understand those systems more completely and has strengthened my patience, documentation habits, and confidence when investigating technical faults.

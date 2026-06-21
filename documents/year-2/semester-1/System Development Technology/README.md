@@ -33,11 +33,11 @@ The work also strengthened my understanding of web-system structure, PHP develop
 
 ## Reflection
 
-This subject required broader organisation than earlier programming work because the implementation, data, interface, and documentation had to support one another.
+System Development Technology provided experience with a larger database-backed web application and formal project documentation. Examining the PHP application helped me understand how interfaces, server-side logic, database operations, user functions, and project files work together. The subject moved beyond isolated programming exercises into a more complete system structure.
 
-The most important challenge was understanding and maintaining consistency across a larger application containing many files and connected functions. Working through this required me to check the task in smaller stages and compare the result with the available requirements or evidence. This process improved my patience and made me more careful about verifying technical work before presenting it.
+The size of the application was one of the main challenges. Understanding the relationship between many files and functions required careful exploration, and incomplete documentation could make maintenance more difficult. This experience taught me to value consistent project organisation, clear naming, installation guidance, and diagrams that explain how major components interact.
 
-Overall, this project contributed to my development by combining practical work with documentation and reflection. It showed me which parts I can now complete with more confidence and which areas still require further practice. The experience will be useful when I work on larger projects that demand clearer organisation, stronger testing, and more independent technical decisions.
+The subject strengthened my web-development awareness and helped prepare me for later enterprise and application projects. It showed me that maintaining an existing system requires different skills from creating a small program from the beginning. I also learned that technical evidence should state individual responsibilities clearly and connect reports, implementation, and final outputs.
 
 ## Possible Improvements
 

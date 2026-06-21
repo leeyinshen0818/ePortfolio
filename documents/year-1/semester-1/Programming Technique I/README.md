@@ -25,6 +25,8 @@ Programming Technique I introduced structured programming and problem solving us
 
 ## Reflection
 
-This course formed my programming foundation. Repeated coding practice taught me to break larger problems into smaller steps, test my assumptions, and improve code when the first solution did not work.
+Programming Technique I was my first structured introduction to programming and became an important foundation for my later technical work. Through C++ assignments and laboratory exercises, I learned to work with variables, input and output, control structures, functions, arrays, and files. More importantly, I began learning how to translate a written problem into a sequence of clear computational steps.
 
-[← Back to Semester 1](../README.md)
+The most challenging part was learning to identify why a program did not behave as expected. Small syntax errors, incorrect conditions, or misplaced operations could affect the whole result. Repeated practice taught me to trace programs carefully, test one part at a time, and compare the output with the original requirements instead of making random changes.
+
+This subject improved my logical thinking, patience, and confidence in solving technical problems. It also taught me that readable structure and careful testing are important even in small programs. The habits developed here supported my progress into data structures, object-oriented programming, analytics, application development, and the programming tasks required throughout my Data Engineering degree.

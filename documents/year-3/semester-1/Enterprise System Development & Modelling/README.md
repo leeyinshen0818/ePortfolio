@@ -22,6 +22,8 @@ This course focused on analysing and modelling enterprise systems through assign
 
 ## Reflection
 
-This course improved my ability to study a system within its organisational context. The project showed that processes, users, data, and interfaces must be modelled consistently to communicate a complete solution.
+Enterprise System Development & Modelling taught me to analyse systems within a wider organisational context. The assignments, industry visit, and project evidence involved process analysis, data collection, diagrams, interface design, and formal reporting. The subject showed that enterprise solutions must account for users, workflows, information, and organisational objectives together.
 
-[← Back to Semester 1](../README.md)
+The project contained several connected components, which made consistency a major challenge. Findings from data collection needed to support the proposed processes, diagrams, and interface decisions. I learned to compare evidence across project sections and to explain how each design element addressed an identified problem instead of presenting disconnected outputs.
+
+This subject improved my research, modelling, teamwork, and documentation skills. It also prepared me for larger application and business-intelligence projects by encouraging a more complete view of systems. I now pay greater attention to how technical features support real processes and how clear models can help stakeholders understand a proposed solution.

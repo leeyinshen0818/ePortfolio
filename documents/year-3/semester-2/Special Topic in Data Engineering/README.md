@@ -27,6 +27,8 @@ This course brings together cloud data engineering, distributed processing, arti
 
 ## Reflection
 
-The tutorials have helped me connect several stages of modern data work, from storage and transformation to modelling, validation, analysis, and presentation. They also demonstrate that data engineering requires both technical implementation and clear communication.
+Special Topic in Data Engineering brings together several stages of modern data work. The Azure tutorial introduced cloud storage, layered bronze, silver, and gold processing, Delta tables, and Power BI. Other activities cover Apache Spark, academic writing, CNN-based image classification, and a pipeline using Python, DuckDB, dbt, validation, and visual outputs.
 
-[← Back to Semester 2](../README.md)
+The main challenge has been understanding how different tools and stages connect within one workflow. Paths, formats, schemas, configurations, transformations, and outputs must remain consistent for the pipeline to work correctly. These activities have encouraged me to verify intermediate results, document the process, and consider security and reproducibility rather than focusing only on the final output.
+
+Overall, the subject has helped me connect software development, analytics, artificial intelligence, cloud platforms, and data engineering. It demonstrates that technical implementation must be supported by clear communication, validation, and reflection. The coursework has also helped me identify areas for continued improvement, particularly scalable cloud processing, secure pipeline design, orchestration, and professional documentation.

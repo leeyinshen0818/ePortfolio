@@ -22,6 +22,8 @@ This course introduced structured methods for studying a problem, gathering requ
 
 ## Reflection
 
-The coursework showed me why development should begin with a clear understanding of users and requirements. Careful analysis reduces confusion and creates a stronger basis for implementation.
+System Analysis and Design introduced a structured approach to understanding problems before beginning implementation. Through assignments and project evidence, I learned to examine user needs, gather requirements, model processes, and describe a proposed system using suitable documentation. The subject demonstrated that a clear design reduces confusion during later development.
 
-[← Back to Semester 2](../README.md)
+One challenge was keeping requirements, diagrams, and written descriptions consistent. A change to one part of the proposed system could affect several other models or assumptions. I learned to review the work as a connected whole and to check whether each design element could be traced back to an identified need.
+
+This subject improved my planning, analytical thinking, and technical communication. It continues to influence how I approach software and data projects because I now try to understand objectives, users, data, and constraints before selecting tools or writing code. This foundation is especially useful when working on enterprise systems and applications containing several connected components.

@@ -23,6 +23,8 @@ This course developed database implementation skills through SQL assignments, la
 
 ## Reflection
 
-This course deepened my understanding of how database design decisions affect implementation and querying. Comparing relational and document approaches helped me see that storage models should be selected according to data relationships and usage needs.
+Database Programming expanded my earlier relational-database knowledge into more detailed implementation work. Through SQL assignments, laboratory work, the Pet Hospital project, and the event-booking document database, I worked with constraints, joins, subqueries, indexing, data manipulation, and JSON-based collections. This allowed me to compare relational and document-oriented approaches.
 
-[← Back to Semester 1](../README.md)
+The key challenge was maintaining consistency while supporting the intended queries and use cases. A suitable structure needed to represent relationships clearly and allow information to be retrieved without unnecessary complexity. Comparing the two database styles showed me that neither model is automatically better; the choice depends on the data, relationships, and access patterns.
+
+This subject strengthened one of the core areas of my Data Engineering programme. It improved my SQL confidence, data-modelling skills, and ability to justify storage decisions. The experience is directly relevant to application development, analytics, business intelligence, and data pipelines because each of these areas depends on reliable and appropriately structured data.

@@ -33,11 +33,11 @@ The work also strengthened my understanding of program decomposition, reusable f
 
 ## Reflection
 
-This project represented progress from small programming exercises to a more complete solution. Managing program structure became more important as the code grew.
+Programming Technique II extended my introductory C++ knowledge into a larger and more organised programming project. I learned to divide a solution into functions, manage data across multiple parts of a program, and connect the implementation with formal project documentation. The subject required more planning than the smaller exercises completed during my first semester.
 
-The most important challenge was maintaining consistent program behaviour as the number of functions and requirements increased. Working through this required me to check the task in smaller stages and compare the result with the available requirements or evidence. This process improved my patience and made me more careful about verifying technical work before presenting it.
+As the program grew, maintaining consistent behaviour became more challenging. Changes in one part could affect another, so I needed to trace the program carefully and keep responsibilities organised. This experience showed me why meaningful names, reusable functions, comments, testing, and clear execution instructions become increasingly important as software grows.
 
-Overall, this project contributed to my development by combining practical work with documentation and reflection. It showed me which parts I can now complete with more confidence and which areas still require further practice. The experience will be useful when I work on larger projects that demand clearer organisation, stronger testing, and more independent technical decisions.
+Completing the subject marked my progress from basic coding exercises towards more complete software solutions. It strengthened my confidence in managing a larger codebase and helped prepare me for data structures, Java object-oriented programming, database programming, and application development. It also taught me to treat documentation and testing as part of development rather than as separate final tasks.
 
 ## Possible Improvements
 

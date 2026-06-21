@@ -22,6 +22,8 @@ This course applied Python programming to data preparation, analysis, visualisat
 
 ## Reflection
 
-This subject strengthened my interest in data engineering and analytics. I learned that useful analysis begins with careful data inspection and preparation, not only with producing charts or model results.
+Data Analytics Programming introduced me to using Python as a practical tool for working with data. Through assignments and the CO2 emissions project, I used notebooks and libraries to inspect, clean, combine, visualise, and analyse datasets. The subject showed how programming can support a repeatable analytical process rather than only produce traditional software applications.
 
-[← Back to Semester 2](../README.md)
+Data preparation was one of the most important challenges. Missing values, inconsistent fields, and unsuitable formats could affect every later result. I learned to inspect data before analysis, document transformations, choose visualisations that matched the question, and avoid drawing conclusions that were not supported by the available evidence.
+
+This subject significantly strengthened my interest in Data Engineering. It connected programming with real datasets and demonstrated how prepared data can support analysis and introductory modelling. The skills developed here became useful in data mining, business intelligence, high-performance processing, and the pipeline-based work completed during Year 3.
