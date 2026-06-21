@@ -1,133 +1,136 @@
-# Data Engineering E-Portfolio
+# 🎓 UTM Data Engineering E-Portfolio
 
-## Special Topic in Data Engineering (SECP3843)
+Welcome to my academic e-portfolio.
 
-**Student:** Lee Yin Shen  
-**Field:** Data Engineering  
-**GitHub:** [leeyinshen0818](https://github.com/leeyinshen0818)  
-**LinkedIn:** [Linkedin](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
+This repository documents selected coursework, assignments, tutorials, projects, reports, source code, and reflections from my journey as a **Bachelor of Computer Science (Data Engineering)** student at **Universiti Teknologi Malaysia (UTM)**.
 
-## About Me
+It presents my academic progress from foundational programming and computer systems to databases, analytics, artificial intelligence, application development, cloud platforms, and modern data-engineering workflows.
 
-I am a Data Engineering student developing skills in data processing, databases, analytics, programming, cloud technologies, and system development.
+## 👤 Student Profile
 
-This e-portfolio presents selected academic work from Year 1 to Year 3. It shows my progress from basic programming and computer systems to database development, data analytics, data mining, and cloud data engineering.
+| | |
+| --- | --- |
+| **Name** | Lee Yin Shen |
+| **Programme** | Bachelor of Computer Science (Data Engineering) |
+| **University** | Universiti Teknologi Malaysia |
+| **GitHub** | [leeyinshen0818](https://github.com/leeyinshen0818) |
+| **LinkedIn** | [Lee Yin Shen](https://www.linkedin.com/in/lee-yin-shen-86ba87297/) |
 
-## Purpose of This Portfolio
+## 📚 Repository Structure
 
-This portfolio was prepared for the GitHub and LinkedIn assessment in **Special Topic in Data Engineering (SECP3843)**.
+```text
+ePortfolio/
+│
+├── documents/
+│   ├── year-1/
+│   │   ├── semester-1/
+│   │   └── semester-2/
+│   │
+│   ├── year-2/
+│   │   ├── semester-1/
+│   │   └── semester-2/
+│   │
+│   └── year-3/
+│       ├── semester-1/
+│       └── semester-2/
+│
+├── image/
+├── index.html
+├── reference.md
+└── README.md
+```
 
-It contains:
+Each academic year, semester, course, and meaningful task folder contains a README where suitable. These pages provide summaries, evidence links, skills demonstrated, learning outcomes, and reflections.
 
-- projects and source code;
-- tutorials and assignments;
-- reports and presentations;
-- notebooks and datasets;
-- diagrams, dashboards, and screenshots; and
-- reflections on my learning.
+## 🎯 Purpose
 
-> This portfolio presents selected important work, not every small classroom task. The focus is on meaningful evidence of my learning progress and technical skills.
+This e-portfolio was prepared for the GitHub and LinkedIn portfolio assessment in **Special Topic in Data Engineering (SECP3843)**. It provides organised evidence of my academic development and technical learning.
 
-## Quick Navigation
+The repository includes:
 
-- [SECP3843 Coursework](#secp3843-coursework)
-- [Featured Projects](#featured-projects)
-- [Academic Work by Year](#academic-work-by-year)
-- [Skills and Technologies](#skills-and-technologies)
-- [Reflection](#reflection)
+- coursework and laboratory exercises;
+- individual and group assignments;
+- technical projects and source code;
+- tutorials and notebooks;
+- reports, presentations, and articles;
+- datasets, diagrams, dashboards, and screenshots; and
+- reflections on challenges, lessons, and possible improvements.
 
-## SECP3843 Coursework
+> This portfolio showcases selected important work rather than every small classroom activity. Its purpose is to present meaningful evidence of my learning progress and technical skills.
 
-| Activity              | Description                                                     | Evidence                                                                                                            |
-| --------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Academic Writing      | Academic writing assignment                                     | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Assign 1 Academic Writting/README.md>) |
-| Azure Tutorial        | Bronze, silver, and gold data processing with Power BI evidence | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>)           |
-| Apache Spark Tutorial | Spark concepts and management case study                        | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 2 Apache Spark/README.md>)    |
-| AI Algorithm Tutorial | ANN and CNN image classification using CIFAR-10                  | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 3 AI Algorithm/README.md>)    |
-| AI Data Pipeline      | Python, DuckDB, dbt, and analytical pipeline outputs             | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 4 AI in  Data Pipeline/README.md>) |
-| Article Tutorial      | Article review and tutorial submission                          | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Article/README.md>)           |
-| Individual Project   | Reserved folder for individual project evidence                 | [Open README](<documents/year-3/semester-2/Special Topic in Data Engineering/Individual Project/README.md>)         |
+## 🗂️ Academic Journey
 
-## Featured Projects
+### 📖 Year 1 — Computing Foundations
 
-### Azure Data Engineering Tutorial
+Year 1 introduced programming, digital systems, computer architecture, interface design, information systems, and system analysis. It established my foundation in C++, logical problem solving, low-level computing concepts, user-centred design, and technical documentation.
 
-A cloud data workflow using Azure storage, PySpark, Parquet, Delta tables, bronze/silver/gold layers, and Power BI.
+| Semester | Main courses | Link |
+| --- | --- | --- |
+| Semester 1 | Digital Logic, Programming Technique I, Technology & Information System | [Explore Semester 1](documents/year-1/semester-1/README.md) |
+| Semester 2 | Computer Organization and Architecture, Human Computer Interaction, Programming Technique II, System Analysis and Design | [Explore Semester 2](documents/year-1/semester-2/README.md) |
 
-[View project](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>)
+[View Year 1 overview](documents/year-1/README.md)
 
-### CO2 Emissions from Cars
+### 💻 Year 2 — Software, Databases, and Data Analysis
 
-A Python data analytics project covering data cleaning, dataset merging, visualisation, and introductory machine learning.
+Year 2 expanded into algorithms, databases, networking, software engineering, web-system development, Python analytics, data mining, Java programming, and operating-system concepts.
 
-[View project](<documents/year-2/semester-2/Data Analytics Programming/Project/README.md>)
+| Semester | Main courses | Link |
+| --- | --- | --- |
+| Semester 1 | Data Structure and Algorithm, Database, Network Communication, Software Engineering, System Development Technology | [Explore Semester 1](documents/year-2/semester-1/README.md) |
+| Semester 2 | Data Analytics Programming, Data Mining, Object-Oriented Programming, Operating System | [Explore Semester 2](documents/year-2/semester-2/README.md) |
 
-### Data Mining Projects
+[View Year 2 overview](documents/year-2/README.md)
 
-Projects involving data preparation, encoding, classification, K-means clustering, and DBSCAN clustering.
+### 📊 Year 3 — Applied Data Engineering
 
-- [Project 1](<documents/year-2/semester-2/Data Mining/Project 1/README.md>)
-- [Project 2](<documents/year-2/semester-2/Data Mining/Project 2/README.md>)
+Year 3 connects earlier programming and database knowledge with artificial intelligence, enterprise systems, mobile development, business intelligence, high-performance processing, cloud technologies, and analytical pipelines.
 
-### Pet Hospital Database
+| Semester | Main courses | Link |
+| --- | --- | --- |
+| Semester 1 | Artificial Intelligence, Database Programming, Enterprise System Development & Modelling | [Explore Semester 1](documents/year-3/semester-1/README.md) |
+| Semester 2 | Application Development, Business Intelligence, High-Performance Data Processing, Special Topic in Data Engineering | [Explore Semester 2](documents/year-3/semester-2/README.md) |
 
-A relational database project containing table design, constraints, data manipulation, queries, joins, subqueries, and indexing.
+[View Year 3 overview](documents/year-3/README.md)
 
-[View project](<documents/year-3/semester-1/Database Programming/Project/README.md>)
+## ⭐ Featured Work
 
-### Event Booking Document Database
+| Project or activity | Summary | Evidence |
+| --- | --- | --- |
+| TVETMARA Student Attendance Management System | A Flutter and Firebase application supporting role-based attendance processes | [View project](<documents/year-3/semester-2/Application Development/Project/README.md>) |
+| Azure Data Engineering Tutorial | A layered cloud data workflow using Azure, PySpark, Parquet, Delta tables, and Power BI | [View tutorial](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>) |
+| High-Performance Web Crawler | Sequential and asynchronous web crawling with performance measurement and PySpark processing | [View project](<documents/year-3/semester-2/High-Performance Data Processing/Project/README.md>) |
+| Business Intelligence Project | Business-data transformation using Alteryx with dashboard evidence prepared for Power BI | [View project](<documents/year-3/semester-2/Business Intelligence/Project/README.md>) |
+| CO₂ Emissions from Cars | Python-based data cleaning, merging, visualisation, and introductory machine-learning work | [View project](<documents/year-2/semester-2/Data Analytics Programming/Project/README.md>) |
+| Pet Hospital Database | A relational database project covering tables, constraints, queries, joins, subqueries, and indexing | [View project](<documents/year-3/semester-1/Database Programming/Project/README.md>) |
+| Koperasi Kakitangan KADA System | A PHP web application containing member, user, administration, and loan-related functions | [View project](<documents/year-2/semester-1/System Development Technology/Koperasi-Kakitangan-KADA-System-main/README.md>) |
+| Course Registration System | A Java console application demonstrating object-oriented programming concepts | [View project](<documents/year-2/semester-2/Object-Oriented Programming/Mini Project/README.md>) |
 
-A document-data project using JSON collections for events, organisers, participants, and bookings.
+## 🔬 SECP3843 Coursework
 
-[View project](<documents/year-3/semester-1/Database Programming/Project 2/README.md>)
+| Activity | Focus | Evidence |
+| --- | --- | --- |
+| Academic Writing | Academic and technical writing | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Assign 1 Academic Writting/README.md>) |
+| Tutorial 1 | Azure-based layered data processing and Power BI | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 1 Azure/README.md>) |
+| Tutorial 2 | Apache Spark concepts and management case study | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 2 Apache Spark/README.md>) |
+| Tutorial 3 | ANN and CNN image classification using CIFAR-10 | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 3 AI Algorithm/README.md>) |
+| Tutorial 4 | Analytical pipeline using Python, DuckDB, dbt, and visualisation | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial 4 AI in  Data Pipeline/README.md>) |
+| Tutorial Article | Article review and written submission | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Tutorial Article/README.md>) |
+| Individual Project | Project evidence area — to be updated | [Open](<documents/year-3/semester-2/Special Topic in Data Engineering/Individual Project/README.md>) |
 
-### Koperasi Kakitangan KADA System
+[View the SECP3843 course overview](<documents/year-3/semester-2/Special Topic in Data Engineering/README.md>)
 
-A PHP web application with user, member, admin, and loan-related functions.
+## 🛠️ Skills and Technologies
 
-[View project](<documents/year-2/semester-1/System Development Technology/Koperasi-Kakitangan-KADA-System-main/README.md>)
+### Data Engineering and Analytics
 
-### Course Registration System
-
-A Java console application demonstrating classes, inheritance, polymorphism, collections, and exception handling.
-
-[View project](<documents/year-2/semester-2/Object-Oriented Programming/Mini Project/README.md>)
-
-### Convocation Queue Simulation
-
-A C++ project that applies a FIFO queue to a convocation ceremony simulation.
-
-[View project](<documents/year-2/semester-1/Data Structure and Algorithm/Mini Project/README.md>)
-
-## Academic Work by Year
-
-The repository is organised by year, semester, and subject. Each meaningful assignment, tutorial, lab, or project folder contains its own README with evidence links and reflection.
-
-### Year Navigation
-
-- [Year 1](documents/year-1/README.md)
-- [Year 2](documents/year-2/README.md)
-- [Year 3](documents/year-3/README.md)
-
-| Study period       | Main subjects                                                                    | Folder                                                                         |
-| ------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Year 1, Semester 1 | Digital Logic, Programming Technique I, Technology & Information System          | [Open semester](documents/year-1/semester-1/README.md)                         |
-| Year 1, Semester 2 | Computer Architecture, HCI, Programming Technique II, System Analysis and Design | [Open semester](documents/year-1/semester-2/README.md)                         |
-| Year 2, Semester 1 | Data Structures, Database, Networking, Software Engineering, System Development  | [Open semester](documents/year-2/semester-1/README.md)                         |
-| Year 2, Semester 2 | Data Analytics, Data Mining, Object-Oriented Programming, Operating System       | [Open semester](documents/year-2/semester-2/README.md)                         |
-| Year 3, Semester 1 | Artificial Intelligence, Database Programming, Enterprise Systems                | [Open semester](documents/year-3/semester-1/README.md)                         |
-| Year 3, Semester 2 | Application Development, Business Intelligence, High-Performance Data Processing, Special Topic in Data Engineering | [Open semester](documents/year-3/semester-2/README.md) |
-
-## Skills and Technologies
-
-### Data Skills
-
-- Data cleaning and preparation
-- Data analysis and visualisation
+- Data cleaning, transformation, validation, and visualisation
 - Relational and document data modelling
-- SQL queries and database design
-- Introductory machine learning and clustering
+- SQL querying and database design
 - Layered data processing
+- Business intelligence and dashboard preparation
+- Introductory machine learning and clustering
+- Performance-aware and distributed data processing
 
 ### Programming
 
@@ -135,38 +138,44 @@ The repository is organised by year, semester, and subject. Each meaningful assi
 - SQL
 - C++
 - Java
+- Dart
 - PHP
-- HTML
+- HTML and CSS
 - Assembly language
 - VHDL
 
 ### Tools and Platforms
 
+- Microsoft Azure
+- Apache Spark and PySpark
+- Power BI and Alteryx
+- Flutter and Firebase
+- DuckDB and dbt
 - Jupyter Notebook
 - pandas, NumPy, Matplotlib, and Seaborn
-- PySpark and Delta Lake
-- Microsoft Azure
-- Power BI
-- scikit-learn
+- TensorFlow, Keras, and scikit-learn
 - MySQL Workbench
 - Cisco Packet Tracer
-- Draw.io and Figma
 - Git and GitHub
 
-## Reflection
+## 🌱 Reflection
 
-My earlier coursework developed my foundation in programming, algorithms, computer systems, and technical documentation. Later projects introduced database design, data analytics, data mining, and software development.
+My academic journey began with foundational programming, computer systems, and system-design subjects. Early programming exercises taught me to solve problems step by step, debug patiently, and organise code more clearly. Hardware-related subjects helped me understand how software connects with computer components, while design and information-system coursework introduced the importance of users, requirements, communication, and documentation.
 
-SECP3843 helped me understand how data can move through a cloud-based pipeline. The Azure and Apache Spark activities introduced data layers, distributed processing, cloud storage, transformation, and dashboard preparation.
+As I progressed, my coursework became more connected and data-oriented. Database, algorithm, networking, software-engineering, and object-oriented programming projects showed me how different technical components contribute to a complete system. Data analytics and data-mining activities strengthened my interest in working with data by demonstrating how raw records can be cleaned, explored, modelled, and transformed into useful findings.
 
-This portfolio records my learning progress. It does not claim expert-level knowledge. I plan to continue improving my skills in cloud data platforms, secure data pipelines, database systems, analytics, and project documentation.
+My Year 3 work brings these foundations together through artificial intelligence, database programming, enterprise modelling, application development, business intelligence, cloud platforms, and high-performance processing. I have learned that producing a working result is only one part of technical development. Data quality, performance, usability, maintainability, testing, and clear evidence are also important.
 
-## Contact and Profiles
+This portfolio records my progress rather than claiming expert-level knowledge. It also shows the challenges I faced, lessons I learned, and areas that I want to improve. I plan to continue developing my skills in scalable data processing, cloud data platforms, reliable pipelines, analytics, system development, and professional technical communication.
+
+> Every project represents another step in my development as a future data engineer.
+
+## 🔗 Profiles and Contact
 
 - [GitHub Profile](https://github.com/leeyinshen0818)
 - [E-Portfolio Repository](https://github.com/leeyinshen0818/ePortfolio)
-- **LinkedIn:** To be updated
+- [LinkedIn Profile](https://www.linkedin.com/in/lee-yin-shen-86ba87297/)
 
 ---
 
-All project descriptions are based on the evidence currently available in this repository.
+All descriptions are based on the evidence currently available in this repository.
