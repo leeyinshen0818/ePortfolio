@@ -4,12 +4,6 @@ const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
 const year = document.querySelector("#current-year");
 const sections = document.querySelectorAll(".section");
-const revealItems = document.querySelectorAll(
-  ".experience-card, .project-card, .academic-year, .skill-group, .credential-list article, .achievement-list article, .about-education, .callout-card"
-);
-const heroItems = document.querySelectorAll(
-  ".hero .eyebrow, .hero h1, .hero-title, .hero-intro, .hero-actions, .hero-highlights, .portrait-wrap"
-);
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (year) {
@@ -70,83 +64,108 @@ if ("IntersectionObserver" in window && trackedSections.length) {
   trackedSections.forEach((section) => navObserver.observe(section));
 }
 
-if (!prefersReducedMotion && "IntersectionObserver" in window) {
-  heroItems.forEach((item, index) => {
-    item.classList.add("hero-reveal");
-    item.style.setProperty("--reveal-delay", `${90 + index * 90}ms`);
+const showElement = (element) => {
+  element.classList.add("is-visible");
+};
+
+if (!prefersReducedMotion) {
+  const hero = document.querySelector(".hero");
+  const heroSequence = [
+    [".hero .eyebrow", 80],
+    [".hero h1", 160],
+    [".hero-title", 260],
+    [".hero-intro", 340],
+    [".hero-actions", 440],
+    [".portrait-wrap", 520],
+    [".hero-highlights", 620],
+  ];
+
+  heroSequence.forEach(([selector, delay]) => {
+    const item = document.querySelector(selector);
+
+    if (item) {
+      item.classList.add("hero-reveal");
+      item.style.setProperty("--reveal-delay", `${delay}ms`);
+    }
   });
 
-  sections.forEach((section) => section.classList.add("reveal"));
-  revealItems.forEach((item, index) => {
-    item.classList.add("reveal-item");
-    item.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
-  });
+  sections.forEach((section) => section.classList.add("reveal-section"));
 
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      document.querySelector(".hero")?.classList.add("is-visible");
-      window.setTimeout(() => {
-        heroItems.forEach((item) => item.style.removeProperty("--reveal-delay"));
-      }, 1500);
+  const revealGroups = [
+    ".about-education",
+    ".experience-list .experience-card",
+    ".project-grid .project-card",
+    ".academic-grid .academic-year",
+    ".skills-grid .skill-group",
+    ".credential-list article",
+    ".achievement-list article",
+    ".contact-links a",
+  ];
+  const revealItems = [];
+
+  revealGroups.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((item, index) => {
+      item.classList.add("reveal-item");
+      item.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
+      revealItems.push(item);
     });
   });
 
-  const revealLinkedSection = () => {
-    if (window.location.hash) {
-      document.querySelector(window.location.hash)?.classList.add("is-visible");
-    }
-  };
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => hero?.classList.add("is-visible"));
+  });
 
-  revealLinkedSection();
-  window.addEventListener("load", revealLinkedSection);
+  if ("IntersectionObserver" in window) {
+    const sectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            showElement(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
 
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          window.setTimeout(
-            () => entry.target.style.removeProperty("--reveal-delay"),
-            1200
-          );
-        } else {
-          entry.target.classList.remove("is-visible");
-        }
-      });
-    },
-    {
-      threshold: 0.05,
-      rootMargin: window.innerWidth > 900
-        ? "-8% 0px -16% 0px"
-        : "-5% 0px -10% 0px",
-    }
-  );
+    const itemObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            showElement(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -6% 0px",
+      }
+    );
 
-  sections.forEach((section) => sectionObserver.observe(section));
+    sections.forEach((section) => sectionObserver.observe(section));
+    revealItems.forEach((item) => itemObserver.observe(item));
 
-  const itemObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          window.setTimeout(
-            () => entry.target.style.removeProperty("--reveal-delay"),
-            1200
-          );
-        } else {
-          entry.target.classList.remove("is-visible");
-        }
-      });
-    },
-    {
-      threshold: 0.08,
-      rootMargin: window.innerWidth > 900
-        ? "-5% 0px -12% 0px"
-        : "-3% 0px -8% 0px",
-    }
-  );
+    const revealLinkedSection = () => {
+      if (!window.location.hash) return;
 
-  revealItems.forEach((item) => itemObserver.observe(item));
+      const linkedSection = document.querySelector(window.location.hash);
+
+      if (linkedSection) {
+        showElement(linkedSection);
+        linkedSection.querySelectorAll(".reveal-item").forEach(showElement);
+      }
+    };
+
+    revealLinkedSection();
+    window.addEventListener("hashchange", revealLinkedSection);
+  } else {
+    sections.forEach(showElement);
+    revealItems.forEach(showElement);
+  }
 }
 
 if (navToggle && navLinks) {
