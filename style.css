@@ -763,18 +763,22 @@ h2 {
 
 .semester-title {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 12px;
+  gap: 18px;
 }
 
 .semester-title strong {
   font-size: 0.82rem;
+  white-space: nowrap;
 }
 
 .semester-title span {
-  color: var(--muted);
-  font-size: 0.68rem;
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-align: right;
 }
 
 .semester-block > a,
@@ -792,7 +796,7 @@ h2 {
 
 .semester-block > a {
   width: fit-content;
-  margin-top: 7px;
+  margin-top: 9px;
   display: inline-flex;
 }
 
@@ -1377,6 +1381,16 @@ h2 {
 
   .about-education {
     padding: 22px;
+  }
+
+  .semester-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .semester-title span {
+    text-align: left;
   }
 
   .contact-links strong {
