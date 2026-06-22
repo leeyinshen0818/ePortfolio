@@ -708,6 +708,107 @@ h2 {
   color: var(--muted);
 }
 
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.academic-year {
+  min-height: 100%;
+  padding: clamp(24px, 2.7vw, 32px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.04);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.academic-year:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.08);
+}
+
+.academic-year-heading {
+  min-height: 170px;
+}
+
+.academic-year-heading > span {
+  color: var(--accent);
+  font-size: 0.69rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.academic-year h3 {
+  margin: 12px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 2.2vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.academic-year-heading p,
+.semester-block p {
+  color: var(--muted);
+}
+
+.academic-year-heading p {
+  margin: 14px 0 0;
+  font-size: 0.88rem;
+}
+
+.semester-block {
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+}
+
+.semester-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.semester-title strong {
+  font-size: 0.82rem;
+}
+
+.semester-title a,
+.academic-year-link {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.semester-title a:hover,
+.academic-year-link:hover {
+  color: #1d4ed8;
+}
+
+.semester-block p {
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.academic-year-link {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 0.76rem;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -968,6 +1069,15 @@ h2 {
 
   .credential-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .academic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-year-heading {
+    min-height: auto;
+    padding-bottom: 24px;
   }
 
   .achievement-list {
@@ -1260,6 +1370,7 @@ h2 {
 
   .experience-card,
   .project-card,
+  .academic-year,
   .credential-list article,
   .achievement-list article {
     padding: 26px 22px;

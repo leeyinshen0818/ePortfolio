@@ -5,7 +5,7 @@ const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
 const year = document.querySelector("#current-year");
 const sections = document.querySelectorAll(".section");
 const revealItems = document.querySelectorAll(
-  ".experience-card, .project-card, .skill-group, .credential-list article, .achievement-list article, .about-education, .callout-card"
+  ".experience-card, .project-card, .academic-year, .skill-group, .credential-list article, .achievement-list article, .about-education, .callout-card"
 );
 const heroItems = document.querySelectorAll(
   ".hero .eyebrow, .hero h1, .hero-title, .hero-intro, .hero-actions, .hero-highlights, .portrait-wrap"
