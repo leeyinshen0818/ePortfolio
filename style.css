@@ -716,7 +716,7 @@ h2 {
 
 .academic-year {
   min-height: 100%;
-  padding: clamp(24px, 2.7vw, 32px);
+  padding: clamp(22px, 2.4vw, 28px);
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
@@ -736,7 +736,7 @@ h2 {
 }
 
 .academic-year-heading {
-  min-height: 170px;
+  min-height: 116px;
 }
 
 .academic-year-heading > span {
@@ -756,18 +756,8 @@ h2 {
   line-height: 1.1;
 }
 
-.academic-year-heading p,
-.semester-block p {
-  color: var(--muted);
-}
-
-.academic-year-heading p {
-  margin: 14px 0 0;
-  font-size: 0.88rem;
-}
-
 .semester-block {
-  padding: 18px 0;
+  padding: 15px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -782,7 +772,12 @@ h2 {
   font-size: 0.82rem;
 }
 
-.semester-title a,
+.semester-title span {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.semester-block > a,
 .academic-year-link {
   color: var(--accent);
   font-size: 0.7rem;
@@ -790,15 +785,15 @@ h2 {
   transition: color var(--transition);
 }
 
-.semester-title a:hover,
+.semester-block > a:hover,
 .academic-year-link:hover {
   color: #1d4ed8;
 }
 
-.semester-block p {
-  margin: 10px 0 0;
-  font-size: 0.78rem;
-  line-height: 1.65;
+.semester-block > a {
+  width: fit-content;
+  margin-top: 7px;
+  display: inline-flex;
 }
 
 .academic-year-link {
@@ -1077,7 +1072,7 @@ h2 {
 
   .academic-year-heading {
     min-height: auto;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
 
   .achievement-list {
