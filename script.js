@@ -71,13 +71,13 @@ const showElement = (element) => {
 if (!prefersReducedMotion) {
   const hero = document.querySelector(".hero");
   const heroSequence = [
-    [".hero .eyebrow", 80],
-    [".hero h1", 160],
-    [".hero-title", 260],
-    [".hero-intro", 340],
-    [".hero-actions", 440],
-    [".portrait-wrap", 520],
-    [".hero-highlights", 620],
+    [".hero .eyebrow", 140],
+    [".hero h1", 300],
+    [".portrait-wrap", 440],
+    [".hero-title", 540],
+    [".hero-intro", 700],
+    [".hero-actions", 880],
+    [".hero-highlights", 1060],
   ];
 
   heroSequence.forEach(([selector, delay]) => {
@@ -106,7 +106,7 @@ if (!prefersReducedMotion) {
   revealGroups.forEach((selector) => {
     document.querySelectorAll(selector).forEach((item, index) => {
       item.classList.add("reveal-item");
-      item.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
+      item.style.setProperty("--reveal-delay", `${(index % 4) * 120}ms`);
       revealItems.push(item);
     });
   });
@@ -146,9 +146,6 @@ if (!prefersReducedMotion) {
       }
     );
 
-    sections.forEach((section) => sectionObserver.observe(section));
-    revealItems.forEach((item) => itemObserver.observe(item));
-
     const revealLinkedSection = () => {
       if (!window.location.hash) return;
 
@@ -162,6 +159,11 @@ if (!prefersReducedMotion) {
 
     revealLinkedSection();
     window.addEventListener("hashchange", revealLinkedSection);
+
+    window.setTimeout(() => {
+      sections.forEach((section) => sectionObserver.observe(section));
+      revealItems.forEach((item) => itemObserver.observe(item));
+    }, 900);
   } else {
     sections.forEach(showElement);
     revealItems.forEach(showElement);
