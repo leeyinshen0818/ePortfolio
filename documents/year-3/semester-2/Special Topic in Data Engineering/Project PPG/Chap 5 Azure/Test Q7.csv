@@ -1,0 +1,24 @@
+﻿sales_order_id,customer_name,finished_product,material_id,material_name,required_delivery_date,quantity_ordered,stock_cover_days,lead_time_days
+SO-048,BuildRight Hardware,Wood Stain Brown,MAT002,Iron Oxide Red,2026-01-05,225,0,10
+SO-043,Eco World Supplies,Premium White Paint 4L,MAT001,Titanium Dioxide,2026-02-01,350,9.72542372881356,14
+SO-043,Eco World Supplies,Premium White Paint 4L,MAT006,Alkyd Resin,2026-02-01,350,0,14
+SO-043,Eco World Supplies,Premium White Paint 4L,MAT013,Mineral Spirits,2026-02-01,350,0,7
+SO-041,Gamuda Trading,Premium White Paint 1L,MAT001,Titanium Dioxide,2026-01-20,600,9.72542372881356,14
+SO-041,Gamuda Trading,Premium White Paint 1L,MAT006,Alkyd Resin,2026-01-20,600,0,14
+SO-041,Gamuda Trading,Premium White Paint 1L,MAT013,Mineral Spirits,2026-01-20,600,0,7
+SO-039,Kerjaya Bina Bhd,Protective Roof Paint,MAT001,Titanium Dioxide,2026-01-10,500,9.72542372881356,14
+SO-039,Kerjaya Bina Bhd,Protective Roof Paint,MAT013,Mineral Spirits,2026-01-10,500,0,7
+SO-045,Maybank Facilities Mgmt,Marine Blue Coating,MAT004,Phthalocyanine Blue,2026-01-24,275,0,21
+SO-045,Maybank Facilities Mgmt,Marine Blue Coating,MAT008,Epoxy Resin,2026-01-24,275,7.472164948453609,21
+SO-045,Maybank Facilities Mgmt,Marine Blue Coating,MAT018,Plastic Drum 20L,2026-01-24,275,0,10
+SO-044,Pavilion Retail Supplies,Industrial Grey Primer,MAT003,Carbon Black,2026-01-11,364,0,7
+SO-044,Pavilion Retail Supplies,Industrial Grey Primer,MAT006,Alkyd Resin,2026-01-11,364,0,14
+SO-042,SP Setia Hardware,Protective Roof Paint,MAT001,Titanium Dioxide,2026-01-25,300,9.72542372881356,14
+SO-042,SP Setia Hardware,Protective Roof Paint,MAT013,Mineral Spirits,2026-01-25,300,0,7
+SO-040,Sime Darby Property,Premium White Paint 4L,MAT001,Titanium Dioxide,2026-01-15,400,9.72542372881356,14
+SO-040,Sime Darby Property,Premium White Paint 4L,MAT006,Alkyd Resin,2026-01-15,400,0,14
+SO-040,Sime Darby Property,Premium White Paint 4L,MAT013,Mineral Spirits,2026-01-15,400,0,7
+SO-046,Top Glove Facilities,Automotive Red Paint,MAT002,Iron Oxide Red,2026-01-17,159,0,10
+SO-047,YTL Hardware Centre,Epoxy Floor Coating,MAT003,Carbon Black,2025-12-31,385,0,7
+SO-047,YTL Hardware Centre,Epoxy Floor Coating,MAT008,Epoxy Resin,2025-12-31,385,7.472164948453609,21
+SO-047,YTL Hardware Centre,Epoxy Floor Coating,MAT018,Plastic Drum 20L,2025-12-31,385,0,10

@@ -1,0 +1,10 @@
+﻿material_id,material_name,category,quantity_on_hand,reorder_level,is_below_reorder
+MAT018,Plastic Drum 20L,Packaging,0,500,1
+MAT001,Titanium Dioxide,Pigment,380,500,1
+MAT002,Iron Oxide Red,Pigment,0,300,1
+MAT003,Carbon Black,Pigment,0,200,1
+MAT004,Phthalocyanine Blue,Pigment,0,150,1
+MAT006,Alkyd Resin,Resin,0,800,1
+MAT008,Epoxy Resin,Resin,240,400,1
+MAT009,Polyurethane Resin,Resin,210,300,1
+MAT013,Mineral Spirits,Solvent,0,600,1

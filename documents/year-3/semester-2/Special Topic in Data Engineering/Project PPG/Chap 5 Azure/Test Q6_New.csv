@@ -1,0 +1,9 @@
+﻿material_id,material_name,category,quantity_on_hand,avg_daily_consumption,stock_cover_days,lead_time_days,is_stockout_risk
+MAT004,Phthalocyanine Blue,Pigment,0,7.549668874172186,0,21,1
+MAT006,Alkyd Resin,Resin,0,39.66887417218543,0,14,1
+MAT018,Plastic Drum 20L,Packaging,0,16.688741721854306,0,10,1
+MAT003,Carbon Black,Pigment,0,10.860927152317881,0,7,1
+MAT013,Mineral Spirits,Solvent,0,25.23076923076923,0,7,1
+MAT002,Iron Oxide Red,Pigment,0,16.09271523178808,0,10,1
+MAT008,Epoxy Resin,Resin,240,32.11920529801324,7.472164948453609,21,1
+MAT001,Titanium Dioxide,Pigment,380,39.0728476821192,9.72542372881356,14,1
